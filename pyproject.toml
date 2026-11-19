@@ -1,0 +1,13 @@
+[project]
+name = "wildfire-simulator-study"
+version = "0.1.0"
+description = "Hands-on exploration of PyTorchFire and FireDataForge"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "pytorchfire==1.1.1", # pulls in torch, numpy, einops
+    "matplotlib>=3.8",    # figures + GIF (via Pillow)
+]
+
+# No [build-system]: uv treats this as a plain project (installs the
+# dependencies into .venv, does not try to package our own code).
