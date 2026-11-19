@@ -44,14 +44,6 @@ gradient descent. Here I only run the forward simulation, with the
 
 ## Results
 
-| | |
-|---|---|
-| Grid | 619 × 748 cells |
-| Steps | 300 (one per observed map) |
-| Runtime (MacBook CPU) | TODO s (TODO ms / step) |
-| Final IoU, simulated vs observed | **TODO** |
-| Final area, simulated / observed | TODO × |
-
 <img src="results/bear2020_final.png" width="420" alt="Final step: simulated vs observed"> <img src="results/bear2020_inputs.png" width="420" alt="Input maps">
 
 IoU (intersection over union) = cells burned in both ÷ cells burned in either;
