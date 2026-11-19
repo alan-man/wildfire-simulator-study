@@ -1,7 +1,7 @@
 """using PyTorchFire on the Bear 2020 fire (California)
 
 it loads the example arrays that ship with the PyTorchFire repo, runs the
-cellular-automata fire simulator day by day, and writes to results/
+cellular-automata fire simulator step by step, and writes to results/
 
     bear2020_inputs.png    the input maps (fuel, slope, wind, ignition)
     bear2020.gif           simulated spread, observed final perimeter in blue
@@ -105,47 +105,47 @@ def iou(a: np.ndarray, b: np.ndarray) -> float:
     return float(np.logical_and(a, b).sum() / union) if union else 1.0
 
 
+def wind_index(step: int, n_wind: int, n_steps: int) -> int:
+    """Which wind map is active at this step (Bear 2020: 20 maps over 300 steps = every 15 steps)."""
+    return min(step * n_wind // n_steps, n_wind - 1)
+
+
 def simulate(model, wind_v, wind_d, targets, args, device):
-    """run the fire day by day"""
-    n_days = len(targets)
-    snapshots, days = [], []
-    step = 0
-    for day in range(n_days):
-        w = min(day, len(wind_v) - 1)  # one wind map per day
-        model.wind_velocity = torch.as_tensor(wind_v[w], device=device)
-        model.wind_towards_direction = torch.as_tensor(wind_d[w], device=device)
-        observed = targets[day]
-        goal = int(observed.sum())
+    """One model step per observed frame, swapping in the next wind map when it is due.
 
-        steps_today = 0
-        while steps_today < args.max_steps_per_day:
-            model.compute()  # one cellular-automata step
-            step += 1
-            steps_today += 1
-            if step % args.save_every == 0:
-                snapshots.append((day, step, state_image(model)))
-            n_affected = int((model.state[0] | model.state[1]).sum())
-            if args.steps_per_day and steps_today >= args.steps_per_day:
-                break
-            if not args.steps_per_day and n_affected >= goal:
-                break
-            if not model.state[0].any():  # nothing burning anymore
-                break
+    The data has one observed burned-area map per simulation step (target[t]),
+    so after step t we compare the simulated burned area with target[t].
+    """
+    n_steps = len(targets)
+    snapshots, log = [], []
+    current_wind = -1
+    for t in range(n_steps):
+        w = wind_index(t, len(wind_v), n_steps)
+        if w != current_wind:  # new wind map
+            model.wind_velocity = torch.as_tensor(wind_v[w], device=device)
+            model.wind_towards_direction = torch.as_tensor(wind_d[w], device=device)
+            current_wind = w
 
+        model.compute()  # one cellular-automata step
+
+        if (t + 1) % args.save_every == 0:
+            snapshots.append((t + 1, w, state_image(model)))
         simulated = (model.state[0] | model.state[1]).cpu().numpy()
-        days.append({"day": day + 1, "steps": steps_today,
-                     "observed_cells": goal, "simulated_cells": int(simulated.sum()),
-                     "iou": round(iou(simulated, observed), 3)})
-        d = days[-1]
-        print(f"  day {d['day']:>2}/{n_days}: {d['steps']:>4} steps | observed "
-              f"{d['observed_cells']:>7} cells | simulated {d['simulated_cells']:>7} | IoU {d['iou']:.2f}")
+        log.append({"step": t + 1, "wind_map": w + 1,
+                    "observed_cells": int(targets[t].sum()),
+                    "simulated_cells": int(simulated.sum()),
+                    "iou": round(iou(simulated, targets[t]), 3)})
+        if (t + 1) % args.print_every == 0 or t + 1 == n_steps:
+            d = log[-1]
+            print(f"  step {d['step']:>3}/{n_steps} (wind map {d['wind_map']:>2}) | observed "
+                  f"{d['observed_cells']:>6} cells | simulated {d['simulated_cells']:>6} | IoU {d['iou']:.2f}")
         if not model.state[0].any():
             print("  fire burned out, stopping")
             break
 
-    if not snapshots or snapshots[-1][1] != step:
-        snapshots.append((day, step, state_image(model)))  # always keep the final state
-    return days, snapshots, simulated
+    if not snapshots or snapshots[-1][0] != t + 1:
+        snapshots.append((t + 1, w, state_image(model)))  # always keep the final state
+    return log, snapshots, simulated
 
 
 ## figures
@@ -192,7 +192,7 @@ def save_inputs_figure(data, wind_v, wind_d, ignition, path: Path):
         ("Vegetation type  (p_veg)", data["p_veg"], "YlGn"),
         ("Vegetation density  (p_den)", data["p_den"], "YlGn"),
         ("Slope to steepest neighbour (deg)", steepness, "copper_r"),
-        ("Wind speed, day 1 (m/s)", wind_v[0], "Blues"),
+        ("Wind speed, first wind map (m/s)", wind_v[0], "Blues"),
     ]
     rows, cols = np.nonzero(ignition)
     fig, axes = plt.subplots(2, 2, figsize=(9, 8), dpi=90)
@@ -210,13 +210,13 @@ def save_inputs_figure(data, wind_v, wind_d, ignition, path: Path):
 
 
 def save_gif(snapshots, base, final_observed, wind_v, wind_d, path: Path,
-             max_frames: int = 80, fps: int = 8):
+             max_frames: int = 50, fps: int = 8):
     stride = max(1, len(snapshots) // max_frames)
     frames = snapshots[::stride]
     if frames[-1] is not snapshots[-1]:
         frames.append(snapshots[-1])
 
-    fig, ax = plt.subplots(figsize=(6, 6.4), dpi=80)
+    fig, ax = plt.subplots(figsize=(6, 6.4), dpi=64)  # small enough to show in a README
     im = ax.imshow(to_rgb(frames[0][2], base))
     ax.contour(final_observed.astype(float), levels=[0.5], colors=OBSERVED, linewidths=1.2)
     ax.set_axis_off()
@@ -230,12 +230,11 @@ def save_gif(snapshots, base, final_observed, wind_v, wind_d, path: Path,
 
     def update(i):
         nonlocal arrow
-        day, step, img = frames[i]
+        step, w, img = frames[i]
         im.set_data(to_rgb(img, base))
-        title.set_text(f"Bear 2020 · day {day + 1} · step {step}")
+        title.set_text(f"Bear 2020 · step {step} · wind map {w + 1}")
         for artist in arrow:
             artist.remove()
-        w = min(day, len(wind_v) - 1)
         arrow = draw_wind_arrow(ax, wind_v[w], wind_d[w])
         return [im, title, *arrow]
 
@@ -251,7 +250,7 @@ def save_comparison(simulated, observed, base, path: Path):
     fig, ax = plt.subplots(figsize=(6, 6.4), dpi=90)
     ax.imshow(rgb)
     ax.set_axis_off()
-    ax.set_title(f"Last day: simulated vs observed (IoU = {iou(simulated, observed):.2f})")
+    ax.set_title(f"Final step: simulated vs observed (IoU = {iou(simulated, observed):.2f})")
     ax.legend(handles=[Patch(color=BOTH, label="burned in both"),
                        Patch(color=SIM_ONLY, label="simulated only"),
                        Patch(color=OBS_ONLY, label="observed only")],
@@ -272,10 +271,8 @@ def parse_args():
     p.add_argument("--data", type=Path, default=DEFAULT_DATA)
     p.add_argument("--device", default="cpu", help="cpu, mps (Apple GPU) or cuda")
     p.add_argument("--seed", type=int, default=0, help="the model is random: fix the seed")
-    p.add_argument("--steps-per-day", type=int, default=0,
-                   help="0 = auto (step until the observed daily area is reached)")
-    p.add_argument("--max-steps-per-day", type=int, default=300)
     p.add_argument("--save-every", type=int, default=2, help="GIF snapshot every N steps")
+    p.add_argument("--print-every", type=int, default=15, help="progress line every N steps")
     # Uncalibrated starting values, same as PyTorchFire's firedataforge_simulate.py example
     p.add_argument("--a", type=float, default=0.1, help="slope effect")
     p.add_argument("--p_h", type=float, default=0.4, help="base spread probability")
@@ -297,24 +294,22 @@ def main():
     shape = data["p_veg"].shape
     wind_v = as_frames(data["wind_velocity"]).astype(np.float32)
     wind_d = as_frames(data["wind_towards_direction"]).astype(np.float32)
-    targets = as_frames(data["target"]) > 0  # observed burned area, one map per day
+    targets = as_frames(data["target"]) > 0  # observed burned area, one map per step
     ignition = ignition_mask(data["initial_ignition"], shape)
-    if not len(wind_v) == len(wind_d) == len(targets):
-        print(f"  warning: {len(wind_v)} wind maps vs {len(targets)} observed days")
-    print(f"Grid {shape[0]} x {shape[1]} cells, {len(targets)} observed day(s), "
+    print(f"Grid {shape[0]} x {shape[1]} cells, {len(targets)} observed frames (= steps), "
+          f"{len(wind_v)} wind maps (one every {len(targets) // len(wind_v)} steps), "
           f"{int(ignition.sum())} ignition cell(s)")
 
     params = {k: getattr(args, k) for k in ["a", "p_h", "c_1", "c_2", "p_continue"]}
     model = build_model(data, wind_v[0], wind_d[0], ignition, params).to(args.device)
     model.reset(seed=args.seed)
 
-    mode = f"fixed {args.steps_per_day} steps/day" if args.steps_per_day else "auto (match daily area)"
-    print(f"Simulating on {args.device}, seed {args.seed}, {mode}")
+    print(f"Simulating on {args.device}, seed {args.seed}")
     t0 = time.perf_counter()
     with torch.inference_mode():
-        days, snapshots, simulated = simulate(model, wind_v, wind_d, targets, args, args.device)
+        log, snapshots, simulated = simulate(model, wind_v, wind_d, targets, args, args.device)
     runtime = time.perf_counter() - t0
-    total_steps = sum(d["steps"] for d in days)
+    total_steps = len(log)
     print(f"Done: {total_steps} steps in {runtime:.1f} s "
           f"({1000 * runtime / max(total_steps, 1):.1f} ms/step)")
 
@@ -322,19 +317,21 @@ def main():
     base = background(np.asarray(data["p_veg"], np.float32), np.asarray(data["p_den"], np.float32))
     save_inputs_figure(data, wind_v, wind_d, ignition, OUT / "bear2020_inputs.png")
     save_gif(snapshots, base, targets[-1], wind_v, wind_d, OUT / "bear2020.gif")
-    save_comparison(simulated, targets[len(days) - 1], base, OUT / "bear2020_final.png")
+    save_comparison(simulated, targets[total_steps - 1], base, OUT / "bear2020_final.png")
 
+    final = log[-1]
     metrics = {
         "fire": "Bear 2020 (California)",
         "grid": list(shape),
         "device": args.device,
         "seed": args.seed,
-        "mode": mode,
         "params": params,
         "total_steps": total_steps,
         "runtime_s": round(runtime, 2),
         "ms_per_step": round(1000 * runtime / max(total_steps, 1), 2),
-        "days": days,
+        "final_iou": final["iou"],
+        "final_area_ratio_sim_over_obs": round(final["simulated_cells"] / max(final["observed_cells"], 1), 2),
+        "steps": log,
     }
     (OUT / "bear2020_metrics.json").write_text(json.dumps(metrics, indent=2))
     for f in sorted(OUT.glob("bear2020*")):

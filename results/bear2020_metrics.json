@@ -6,7 +6,6 @@
   ],
   "device": "cpu",
   "seed": 0,
-  "mode": "auto (match daily area)",
   "params": {
     "a": 0.1,
     "p_h": 0.4,
@@ -15,2108 +14,2110 @@
     "p_continue": 0.3
   },
   "total_steps": 300,
-  "runtime_s": 5.64,
-  "ms_per_step": 18.81,
-  "days": [
+  "runtime_s": 6.1,
+  "ms_per_step": 20.32,
+  "final_iou": 0.682,
+  "final_area_ratio_sim_over_obs": 1.46,
+  "steps": [
     {
-      "day": 1,
-      "steps": 1,
+      "step": 1,
+      "wind_map": 1,
       "observed_cells": 22,
       "simulated_cells": 22,
       "iou": 1.0
     },
     {
-      "day": 2,
-      "steps": 1,
+      "step": 2,
+      "wind_map": 1,
       "observed_cells": 40,
       "simulated_cells": 41,
       "iou": 0.976
     },
     {
-      "day": 3,
-      "steps": 1,
+      "step": 3,
+      "wind_map": 1,
       "observed_cells": 66,
       "simulated_cells": 68,
       "iou": 0.942
     },
     {
-      "day": 4,
-      "steps": 1,
+      "step": 4,
+      "wind_map": 1,
       "observed_cells": 99,
       "simulated_cells": 104,
       "iou": 0.952
     },
     {
-      "day": 5,
-      "steps": 1,
+      "step": 5,
+      "wind_map": 1,
       "observed_cells": 138,
       "simulated_cells": 143,
       "iou": 0.965
     },
     {
-      "day": 6,
-      "steps": 1,
+      "step": 6,
+      "wind_map": 1,
       "observed_cells": 180,
       "simulated_cells": 185,
       "iou": 0.973
     },
     {
-      "day": 7,
-      "steps": 1,
+      "step": 7,
+      "wind_map": 1,
       "observed_cells": 225,
-      "simulated_cells": 233,
-      "iou": 0.957
+      "simulated_cells": 234,
+      "iou": 0.953
     },
     {
-      "day": 8,
-      "steps": 1,
+      "step": 8,
+      "wind_map": 1,
       "observed_cells": 273,
-      "simulated_cells": 283,
-      "iou": 0.944
+      "simulated_cells": 287,
+      "iou": 0.938
     },
     {
-      "day": 9,
-      "steps": 1,
+      "step": 9,
+      "wind_map": 1,
       "observed_cells": 328,
-      "simulated_cells": 335,
-      "iou": 0.944
+      "simulated_cells": 340,
+      "iou": 0.942
     },
     {
-      "day": 10,
-      "steps": 1,
+      "step": 10,
+      "wind_map": 1,
       "observed_cells": 387,
-      "simulated_cells": 387,
-      "iou": 0.94
+      "simulated_cells": 394,
+      "iou": 0.943
     },
     {
-      "day": 11,
-      "steps": 1,
+      "step": 11,
+      "wind_map": 1,
       "observed_cells": 445,
-      "simulated_cells": 447,
+      "simulated_cells": 453,
       "iou": 0.931
     },
     {
-      "day": 12,
-      "steps": 1,
+      "step": 12,
+      "wind_map": 1,
       "observed_cells": 500,
-      "simulated_cells": 505,
-      "iou": 0.925
+      "simulated_cells": 511,
+      "iou": 0.926
     },
     {
-      "day": 13,
-      "steps": 1,
+      "step": 13,
+      "wind_map": 1,
       "observed_cells": 558,
-      "simulated_cells": 564,
-      "iou": 0.934
+      "simulated_cells": 571,
+      "iou": 0.93
     },
     {
-      "day": 14,
-      "steps": 1,
+      "step": 14,
+      "wind_map": 1,
       "observed_cells": 610,
-      "simulated_cells": 627,
-      "iou": 0.918
+      "simulated_cells": 632,
+      "iou": 0.917
     },
     {
-      "day": 15,
-      "steps": 1,
+      "step": 15,
+      "wind_map": 1,
       "observed_cells": 665,
-      "simulated_cells": 692,
-      "iou": 0.903
-    },
-    {
-      "day": 16,
-      "steps": 1,
-      "observed_cells": 722,
-      "simulated_cells": 761,
+      "simulated_cells": 700,
       "iou": 0.901
     },
     {
-      "day": 17,
-      "steps": 1,
-      "observed_cells": 782,
-      "simulated_cells": 835,
-      "iou": 0.896
-    },
-    {
-      "day": 18,
-      "steps": 1,
-      "observed_cells": 849,
-      "simulated_cells": 909,
-      "iou": 0.896
-    },
-    {
-      "day": 19,
-      "steps": 1,
-      "observed_cells": 915,
-      "simulated_cells": 991,
-      "iou": 0.897
-    },
-    {
-      "day": 20,
-      "steps": 1,
-      "observed_cells": 986,
-      "simulated_cells": 1070,
+      "step": 16,
+      "wind_map": 2,
+      "observed_cells": 722,
+      "simulated_cells": 771,
       "iou": 0.904
     },
     {
-      "day": 21,
-      "steps": 1,
+      "step": 17,
+      "wind_map": 2,
+      "observed_cells": 782,
+      "simulated_cells": 841,
+      "iou": 0.898
+    },
+    {
+      "step": 18,
+      "wind_map": 2,
+      "observed_cells": 849,
+      "simulated_cells": 914,
+      "iou": 0.888
+    },
+    {
+      "step": 19,
+      "wind_map": 2,
+      "observed_cells": 915,
+      "simulated_cells": 998,
+      "iou": 0.892
+    },
+    {
+      "step": 20,
+      "wind_map": 2,
+      "observed_cells": 986,
+      "simulated_cells": 1080,
+      "iou": 0.902
+    },
+    {
+      "step": 21,
+      "wind_map": 2,
       "observed_cells": 1053,
-      "simulated_cells": 1160,
-      "iou": 0.893
+      "simulated_cells": 1163,
+      "iou": 0.894
     },
     {
-      "day": 22,
-      "steps": 1,
+      "step": 22,
+      "wind_map": 2,
       "observed_cells": 1115,
-      "simulated_cells": 1250,
-      "iou": 0.878
+      "simulated_cells": 1251,
+      "iou": 0.881
     },
     {
-      "day": 23,
-      "steps": 1,
+      "step": 23,
+      "wind_map": 2,
       "observed_cells": 1175,
-      "simulated_cells": 1353,
-      "iou": 0.859
+      "simulated_cells": 1356,
+      "iou": 0.86
     },
     {
-      "day": 24,
-      "steps": 1,
+      "step": 24,
+      "wind_map": 2,
       "observed_cells": 1235,
-      "simulated_cells": 1452,
-      "iou": 0.843
+      "simulated_cells": 1459,
+      "iou": 0.841
     },
     {
-      "day": 25,
-      "steps": 1,
+      "step": 25,
+      "wind_map": 2,
       "observed_cells": 1294,
-      "simulated_cells": 1557,
-      "iou": 0.821
+      "simulated_cells": 1564,
+      "iou": 0.819
     },
     {
-      "day": 26,
-      "steps": 1,
+      "step": 26,
+      "wind_map": 2,
       "observed_cells": 1361,
-      "simulated_cells": 1665,
-      "iou": 0.805
+      "simulated_cells": 1661,
+      "iou": 0.806
     },
     {
-      "day": 27,
-      "steps": 1,
+      "step": 27,
+      "wind_map": 2,
       "observed_cells": 1423,
-      "simulated_cells": 1782,
-      "iou": 0.787
+      "simulated_cells": 1775,
+      "iou": 0.79
     },
     {
-      "day": 28,
-      "steps": 1,
+      "step": 28,
+      "wind_map": 2,
       "observed_cells": 1486,
-      "simulated_cells": 1893,
-      "iou": 0.777
+      "simulated_cells": 1889,
+      "iou": 0.775
     },
     {
-      "day": 29,
-      "steps": 1,
+      "step": 29,
+      "wind_map": 2,
       "observed_cells": 1549,
       "simulated_cells": 2000,
-      "iou": 0.767
+      "iou": 0.769
     },
     {
-      "day": 30,
-      "steps": 1,
+      "step": 30,
+      "wind_map": 2,
       "observed_cells": 1616,
-      "simulated_cells": 2119,
-      "iou": 0.759
+      "simulated_cells": 2121,
+      "iou": 0.756
     },
     {
-      "day": 31,
-      "steps": 1,
+      "step": 31,
+      "wind_map": 3,
       "observed_cells": 1678,
-      "simulated_cells": 2227,
-      "iou": 0.751
+      "simulated_cells": 2231,
+      "iou": 0.749
     },
     {
-      "day": 32,
-      "steps": 1,
+      "step": 32,
+      "wind_map": 3,
       "observed_cells": 1745,
-      "simulated_cells": 2338,
-      "iou": 0.743
+      "simulated_cells": 2341,
+      "iou": 0.742
     },
     {
-      "day": 33,
-      "steps": 1,
+      "step": 33,
+      "wind_map": 3,
       "observed_cells": 1813,
-      "simulated_cells": 2454,
+      "simulated_cells": 2453,
       "iou": 0.735
     },
     {
-      "day": 34,
-      "steps": 1,
+      "step": 34,
+      "wind_map": 3,
       "observed_cells": 1885,
-      "simulated_cells": 2562,
+      "simulated_cells": 2560,
       "iou": 0.728
     },
     {
-      "day": 35,
-      "steps": 1,
+      "step": 35,
+      "wind_map": 3,
       "observed_cells": 1958,
-      "simulated_cells": 2685,
-      "iou": 0.722
+      "simulated_cells": 2682,
+      "iou": 0.723
     },
     {
-      "day": 36,
-      "steps": 1,
+      "step": 36,
+      "wind_map": 3,
       "observed_cells": 2030,
-      "simulated_cells": 2820,
-      "iou": 0.711
+      "simulated_cells": 2818,
+      "iou": 0.712
     },
     {
-      "day": 37,
-      "steps": 1,
+      "step": 37,
+      "wind_map": 3,
       "observed_cells": 2110,
-      "simulated_cells": 2968,
-      "iou": 0.701
+      "simulated_cells": 2961,
+      "iou": 0.704
     },
     {
-      "day": 38,
-      "steps": 1,
+      "step": 38,
+      "wind_map": 3,
       "observed_cells": 2185,
-      "simulated_cells": 3110,
-      "iou": 0.691
-    },
-    {
-      "day": 39,
-      "steps": 1,
-      "observed_cells": 2259,
-      "simulated_cells": 3260,
-      "iou": 0.682
-    },
-    {
-      "day": 40,
-      "steps": 1,
-      "observed_cells": 2340,
-      "simulated_cells": 3412,
-      "iou": 0.675
-    },
-    {
-      "day": 41,
-      "steps": 1,
-      "observed_cells": 2431,
-      "simulated_cells": 3553,
-      "iou": 0.673
-    },
-    {
-      "day": 42,
-      "steps": 1,
-      "observed_cells": 2542,
-      "simulated_cells": 3690,
-      "iou": 0.673
-    },
-    {
-      "day": 43,
-      "steps": 1,
-      "observed_cells": 2666,
-      "simulated_cells": 3845,
-      "iou": 0.677
-    },
-    {
-      "day": 44,
-      "steps": 1,
-      "observed_cells": 2792,
-      "simulated_cells": 4029,
-      "iou": 0.675
-    },
-    {
-      "day": 45,
-      "steps": 1,
-      "observed_cells": 2927,
-      "simulated_cells": 4203,
-      "iou": 0.684
-    },
-    {
-      "day": 46,
-      "steps": 1,
-      "observed_cells": 3054,
-      "simulated_cells": 4352,
-      "iou": 0.689
-    },
-    {
-      "day": 47,
-      "steps": 1,
-      "observed_cells": 3174,
-      "simulated_cells": 4516,
-      "iou": 0.69
-    },
-    {
-      "day": 48,
-      "steps": 1,
-      "observed_cells": 3306,
-      "simulated_cells": 4673,
-      "iou": 0.695
-    },
-    {
-      "day": 49,
-      "steps": 1,
-      "observed_cells": 3435,
-      "simulated_cells": 4825,
-      "iou": 0.702
-    },
-    {
-      "day": 50,
-      "steps": 1,
-      "observed_cells": 3566,
-      "simulated_cells": 4983,
-      "iou": 0.707
-    },
-    {
-      "day": 51,
-      "steps": 1,
-      "observed_cells": 3700,
-      "simulated_cells": 5135,
-      "iou": 0.712
-    },
-    {
-      "day": 52,
-      "steps": 1,
-      "observed_cells": 3835,
-      "simulated_cells": 5303,
-      "iou": 0.715
-    },
-    {
-      "day": 53,
-      "steps": 1,
-      "observed_cells": 3978,
-      "simulated_cells": 5497,
-      "iou": 0.717
-    },
-    {
-      "day": 54,
-      "steps": 1,
-      "observed_cells": 4126,
-      "simulated_cells": 5708,
-      "iou": 0.716
-    },
-    {
-      "day": 55,
-      "steps": 1,
-      "observed_cells": 4275,
-      "simulated_cells": 5940,
-      "iou": 0.714
-    },
-    {
-      "day": 56,
-      "steps": 1,
-      "observed_cells": 4420,
-      "simulated_cells": 6166,
-      "iou": 0.709
-    },
-    {
-      "day": 57,
-      "steps": 1,
-      "observed_cells": 4573,
-      "simulated_cells": 6407,
-      "iou": 0.704
-    },
-    {
-      "day": 58,
-      "steps": 1,
-      "observed_cells": 4737,
-      "simulated_cells": 6642,
-      "iou": 0.702
-    },
-    {
-      "day": 59,
-      "steps": 1,
-      "observed_cells": 4889,
-      "simulated_cells": 6879,
-      "iou": 0.699
-    },
-    {
-      "day": 60,
-      "steps": 1,
-      "observed_cells": 5053,
-      "simulated_cells": 7118,
-      "iou": 0.699
-    },
-    {
-      "day": 61,
-      "steps": 1,
-      "observed_cells": 5224,
-      "simulated_cells": 7371,
-      "iou": 0.7
-    },
-    {
-      "day": 62,
-      "steps": 1,
-      "observed_cells": 5402,
-      "simulated_cells": 7622,
-      "iou": 0.701
-    },
-    {
-      "day": 63,
-      "steps": 1,
-      "observed_cells": 5605,
-      "simulated_cells": 7898,
-      "iou": 0.702
-    },
-    {
-      "day": 64,
-      "steps": 1,
-      "observed_cells": 5812,
-      "simulated_cells": 8172,
-      "iou": 0.704
-    },
-    {
-      "day": 65,
-      "steps": 1,
-      "observed_cells": 6031,
-      "simulated_cells": 8432,
-      "iou": 0.708
-    },
-    {
-      "day": 66,
-      "steps": 1,
-      "observed_cells": 6239,
-      "simulated_cells": 8693,
-      "iou": 0.711
-    },
-    {
-      "day": 67,
-      "steps": 1,
-      "observed_cells": 6464,
-      "simulated_cells": 8952,
-      "iou": 0.716
-    },
-    {
-      "day": 68,
-      "steps": 1,
-      "observed_cells": 6693,
-      "simulated_cells": 9208,
-      "iou": 0.721
-    },
-    {
-      "day": 69,
-      "steps": 1,
-      "observed_cells": 6926,
-      "simulated_cells": 9459,
-      "iou": 0.727
-    },
-    {
-      "day": 70,
-      "steps": 1,
-      "observed_cells": 7159,
-      "simulated_cells": 9714,
-      "iou": 0.732
-    },
-    {
-      "day": 71,
-      "steps": 1,
-      "observed_cells": 7381,
-      "simulated_cells": 10008,
-      "iou": 0.732
-    },
-    {
-      "day": 72,
-      "steps": 1,
-      "observed_cells": 7592,
-      "simulated_cells": 10297,
-      "iou": 0.731
-    },
-    {
-      "day": 73,
-      "steps": 1,
-      "observed_cells": 7795,
-      "simulated_cells": 10606,
-      "iou": 0.727
-    },
-    {
-      "day": 74,
-      "steps": 1,
-      "observed_cells": 7993,
-      "simulated_cells": 10897,
-      "iou": 0.726
-    },
-    {
-      "day": 75,
-      "steps": 1,
-      "observed_cells": 8189,
-      "simulated_cells": 11180,
-      "iou": 0.725
-    },
-    {
-      "day": 76,
-      "steps": 1,
-      "observed_cells": 8398,
-      "simulated_cells": 11451,
-      "iou": 0.726
-    },
-    {
-      "day": 77,
-      "steps": 1,
-      "observed_cells": 8626,
-      "simulated_cells": 11738,
-      "iou": 0.727
-    },
-    {
-      "day": 78,
-      "steps": 1,
-      "observed_cells": 8867,
-      "simulated_cells": 12019,
-      "iou": 0.728
-    },
-    {
-      "day": 79,
-      "steps": 1,
-      "observed_cells": 9108,
-      "simulated_cells": 12294,
-      "iou": 0.73
-    },
-    {
-      "day": 80,
-      "steps": 1,
-      "observed_cells": 9358,
-      "simulated_cells": 12574,
-      "iou": 0.734
-    },
-    {
-      "day": 81,
-      "steps": 1,
-      "observed_cells": 9614,
-      "simulated_cells": 12866,
-      "iou": 0.737
-    },
-    {
-      "day": 82,
-      "steps": 1,
-      "observed_cells": 9859,
-      "simulated_cells": 13175,
-      "iou": 0.739
-    },
-    {
-      "day": 83,
-      "steps": 1,
-      "observed_cells": 10081,
-      "simulated_cells": 13459,
-      "iou": 0.739
-    },
-    {
-      "day": 84,
-      "steps": 1,
-      "observed_cells": 10315,
-      "simulated_cells": 13739,
-      "iou": 0.741
-    },
-    {
-      "day": 85,
-      "steps": 1,
-      "observed_cells": 10554,
-      "simulated_cells": 14026,
-      "iou": 0.742
-    },
-    {
-      "day": 86,
-      "steps": 1,
-      "observed_cells": 10794,
-      "simulated_cells": 14325,
-      "iou": 0.743
-    },
-    {
-      "day": 87,
-      "steps": 1,
-      "observed_cells": 11045,
-      "simulated_cells": 14650,
-      "iou": 0.743
-    },
-    {
-      "day": 88,
-      "steps": 1,
-      "observed_cells": 11294,
-      "simulated_cells": 14974,
-      "iou": 0.743
-    },
-    {
-      "day": 89,
-      "steps": 1,
-      "observed_cells": 11534,
-      "simulated_cells": 15308,
-      "iou": 0.742
-    },
-    {
-      "day": 90,
-      "steps": 1,
-      "observed_cells": 11775,
-      "simulated_cells": 15665,
-      "iou": 0.741
-    },
-    {
-      "day": 91,
-      "steps": 1,
-      "observed_cells": 12023,
-      "simulated_cells": 16038,
-      "iou": 0.74
-    },
-    {
-      "day": 92,
-      "steps": 1,
-      "observed_cells": 12248,
-      "simulated_cells": 16415,
-      "iou": 0.738
-    },
-    {
-      "day": 93,
-      "steps": 1,
-      "observed_cells": 12468,
-      "simulated_cells": 16779,
-      "iou": 0.737
-    },
-    {
-      "day": 94,
-      "steps": 1,
-      "observed_cells": 12692,
-      "simulated_cells": 17141,
-      "iou": 0.735
-    },
-    {
-      "day": 95,
-      "steps": 1,
-      "observed_cells": 12912,
-      "simulated_cells": 17501,
-      "iou": 0.733
-    },
-    {
-      "day": 96,
-      "steps": 1,
-      "observed_cells": 13138,
-      "simulated_cells": 17843,
-      "iou": 0.732
-    },
-    {
-      "day": 97,
-      "steps": 1,
-      "observed_cells": 13390,
-      "simulated_cells": 18163,
-      "iou": 0.734
-    },
-    {
-      "day": 98,
-      "steps": 1,
-      "observed_cells": 13643,
-      "simulated_cells": 18493,
-      "iou": 0.734
-    },
-    {
-      "day": 99,
-      "steps": 1,
-      "observed_cells": 13916,
-      "simulated_cells": 18826,
-      "iou": 0.735
-    },
-    {
-      "day": 100,
-      "steps": 1,
-      "observed_cells": 14203,
-      "simulated_cells": 19198,
-      "iou": 0.736
-    },
-    {
-      "day": 101,
-      "steps": 1,
-      "observed_cells": 14495,
-      "simulated_cells": 19571,
-      "iou": 0.737
-    },
-    {
-      "day": 102,
-      "steps": 1,
-      "observed_cells": 14792,
-      "simulated_cells": 19951,
-      "iou": 0.738
-    },
-    {
-      "day": 103,
-      "steps": 1,
-      "observed_cells": 15125,
-      "simulated_cells": 20315,
-      "iou": 0.743
-    },
-    {
-      "day": 104,
-      "steps": 1,
-      "observed_cells": 15471,
-      "simulated_cells": 20695,
-      "iou": 0.746
-    },
-    {
-      "day": 105,
-      "steps": 1,
-      "observed_cells": 15806,
-      "simulated_cells": 21083,
-      "iou": 0.748
-    },
-    {
-      "day": 106,
-      "steps": 1,
-      "observed_cells": 16129,
-      "simulated_cells": 21468,
-      "iou": 0.75
-    },
-    {
-      "day": 107,
-      "steps": 1,
-      "observed_cells": 16435,
-      "simulated_cells": 21877,
-      "iou": 0.75
-    },
-    {
-      "day": 108,
-      "steps": 1,
-      "observed_cells": 16735,
-      "simulated_cells": 22290,
-      "iou": 0.749
-    },
-    {
-      "day": 109,
-      "steps": 1,
-      "observed_cells": 17035,
-      "simulated_cells": 22729,
-      "iou": 0.748
-    },
-    {
-      "day": 110,
-      "steps": 1,
-      "observed_cells": 17340,
-      "simulated_cells": 23169,
-      "iou": 0.747
-    },
-    {
-      "day": 111,
-      "steps": 1,
-      "observed_cells": 17655,
-      "simulated_cells": 23616,
-      "iou": 0.746
-    },
-    {
-      "day": 112,
-      "steps": 1,
-      "observed_cells": 17980,
-      "simulated_cells": 24081,
-      "iou": 0.745
-    },
-    {
-      "day": 113,
-      "steps": 1,
-      "observed_cells": 18296,
-      "simulated_cells": 24536,
-      "iou": 0.744
-    },
-    {
-      "day": 114,
-      "steps": 1,
-      "observed_cells": 18611,
-      "simulated_cells": 24983,
-      "iou": 0.743
-    },
-    {
-      "day": 115,
-      "steps": 1,
-      "observed_cells": 18940,
-      "simulated_cells": 25434,
-      "iou": 0.743
-    },
-    {
-      "day": 116,
-      "steps": 1,
-      "observed_cells": 19283,
-      "simulated_cells": 25904,
-      "iou": 0.742
-    },
-    {
-      "day": 117,
-      "steps": 1,
-      "observed_cells": 19642,
-      "simulated_cells": 26393,
-      "iou": 0.742
-    },
-    {
-      "day": 118,
-      "steps": 1,
-      "observed_cells": 19976,
-      "simulated_cells": 26917,
-      "iou": 0.74
-    },
-    {
-      "day": 119,
-      "steps": 1,
-      "observed_cells": 20316,
-      "simulated_cells": 27413,
-      "iou": 0.738
-    },
-    {
-      "day": 120,
-      "steps": 1,
-      "observed_cells": 20677,
-      "simulated_cells": 27906,
-      "iou": 0.738
-    },
-    {
-      "day": 121,
-      "steps": 1,
-      "observed_cells": 21030,
-      "simulated_cells": 28403,
-      "iou": 0.737
-    },
-    {
-      "day": 122,
-      "steps": 1,
-      "observed_cells": 21405,
-      "simulated_cells": 28918,
-      "iou": 0.737
-    },
-    {
-      "day": 123,
-      "steps": 1,
-      "observed_cells": 21794,
-      "simulated_cells": 29431,
-      "iou": 0.737
-    },
-    {
-      "day": 124,
-      "steps": 1,
-      "observed_cells": 22190,
-      "simulated_cells": 29959,
-      "iou": 0.737
-    },
-    {
-      "day": 125,
-      "steps": 1,
-      "observed_cells": 22579,
-      "simulated_cells": 30492,
-      "iou": 0.737
-    },
-    {
-      "day": 126,
-      "steps": 1,
-      "observed_cells": 22970,
-      "simulated_cells": 31039,
-      "iou": 0.737
-    },
-    {
-      "day": 127,
-      "steps": 1,
-      "observed_cells": 23379,
-      "simulated_cells": 31563,
-      "iou": 0.737
-    },
-    {
-      "day": 128,
-      "steps": 1,
-      "observed_cells": 23789,
-      "simulated_cells": 32070,
-      "iou": 0.738
-    },
-    {
-      "day": 129,
-      "steps": 1,
-      "observed_cells": 24201,
-      "simulated_cells": 32605,
-      "iou": 0.738
-    },
-    {
-      "day": 130,
-      "steps": 1,
-      "observed_cells": 24602,
-      "simulated_cells": 33116,
-      "iou": 0.739
-    },
-    {
-      "day": 131,
-      "steps": 1,
-      "observed_cells": 25008,
-      "simulated_cells": 33625,
-      "iou": 0.74
-    },
-    {
-      "day": 132,
-      "steps": 1,
-      "observed_cells": 25423,
-      "simulated_cells": 34163,
-      "iou": 0.741
-    },
-    {
-      "day": 133,
-      "steps": 1,
-      "observed_cells": 25844,
-      "simulated_cells": 34690,
-      "iou": 0.742
-    },
-    {
-      "day": 134,
-      "steps": 1,
-      "observed_cells": 26284,
-      "simulated_cells": 35210,
-      "iou": 0.743
-    },
-    {
-      "day": 135,
-      "steps": 1,
-      "observed_cells": 26709,
-      "simulated_cells": 35737,
-      "iou": 0.744
-    },
-    {
-      "day": 136,
-      "steps": 1,
-      "observed_cells": 27135,
-      "simulated_cells": 36272,
-      "iou": 0.745
-    },
-    {
-      "day": 137,
-      "steps": 1,
-      "observed_cells": 27571,
-      "simulated_cells": 36824,
-      "iou": 0.746
-    },
-    {
-      "day": 138,
-      "steps": 1,
-      "observed_cells": 28036,
-      "simulated_cells": 37390,
-      "iou": 0.747
-    },
-    {
-      "day": 139,
-      "steps": 1,
-      "observed_cells": 28509,
-      "simulated_cells": 37965,
-      "iou": 0.748
-    },
-    {
-      "day": 140,
-      "steps": 1,
-      "observed_cells": 28964,
-      "simulated_cells": 38541,
-      "iou": 0.749
-    },
-    {
-      "day": 141,
-      "steps": 1,
-      "observed_cells": 29384,
-      "simulated_cells": 39108,
-      "iou": 0.748
-    },
-    {
-      "day": 142,
-      "steps": 1,
-      "observed_cells": 29772,
-      "simulated_cells": 39688,
-      "iou": 0.747
-    },
-    {
-      "day": 143,
-      "steps": 1,
-      "observed_cells": 30156,
-      "simulated_cells": 40259,
-      "iou": 0.746
-    },
-    {
-      "day": 144,
-      "steps": 1,
-      "observed_cells": 30558,
-      "simulated_cells": 40816,
-      "iou": 0.745
-    },
-    {
-      "day": 145,
-      "steps": 1,
-      "observed_cells": 30943,
-      "simulated_cells": 41360,
-      "iou": 0.744
-    },
-    {
-      "day": 146,
-      "steps": 1,
-      "observed_cells": 31338,
-      "simulated_cells": 41871,
-      "iou": 0.744
-    },
-    {
-      "day": 147,
-      "steps": 1,
-      "observed_cells": 31722,
-      "simulated_cells": 42393,
-      "iou": 0.744
-    },
-    {
-      "day": 148,
-      "steps": 1,
-      "observed_cells": 32112,
-      "simulated_cells": 42936,
-      "iou": 0.743
-    },
-    {
-      "day": 149,
-      "steps": 1,
-      "observed_cells": 32494,
-      "simulated_cells": 43484,
-      "iou": 0.742
-    },
-    {
-      "day": 150,
-      "steps": 1,
-      "observed_cells": 32883,
-      "simulated_cells": 44022,
-      "iou": 0.742
-    },
-    {
-      "day": 151,
-      "steps": 1,
-      "observed_cells": 33247,
-      "simulated_cells": 44579,
-      "iou": 0.74
-    },
-    {
-      "day": 152,
-      "steps": 1,
-      "observed_cells": 33623,
-      "simulated_cells": 45141,
-      "iou": 0.739
-    },
-    {
-      "day": 153,
-      "steps": 1,
-      "observed_cells": 34025,
-      "simulated_cells": 45732,
-      "iou": 0.738
-    },
-    {
-      "day": 154,
-      "steps": 1,
-      "observed_cells": 34420,
-      "simulated_cells": 46323,
-      "iou": 0.737
-    },
-    {
-      "day": 155,
-      "steps": 1,
-      "observed_cells": 34821,
-      "simulated_cells": 46950,
-      "iou": 0.735
-    },
-    {
-      "day": 156,
-      "steps": 1,
-      "observed_cells": 35234,
-      "simulated_cells": 47552,
-      "iou": 0.735
-    },
-    {
-      "day": 157,
-      "steps": 1,
-      "observed_cells": 35651,
-      "simulated_cells": 48137,
-      "iou": 0.735
-    },
-    {
-      "day": 158,
-      "steps": 1,
-      "observed_cells": 36078,
-      "simulated_cells": 48734,
-      "iou": 0.734
-    },
-    {
-      "day": 159,
-      "steps": 1,
-      "observed_cells": 36518,
-      "simulated_cells": 49319,
-      "iou": 0.734
-    },
-    {
-      "day": 160,
-      "steps": 1,
-      "observed_cells": 36961,
-      "simulated_cells": 49908,
-      "iou": 0.734
-    },
-    {
-      "day": 161,
-      "steps": 1,
-      "observed_cells": 37450,
-      "simulated_cells": 50497,
-      "iou": 0.735
-    },
-    {
-      "day": 162,
-      "steps": 1,
-      "observed_cells": 37939,
-      "simulated_cells": 51078,
-      "iou": 0.736
-    },
-    {
-      "day": 163,
-      "steps": 1,
-      "observed_cells": 38430,
-      "simulated_cells": 51672,
-      "iou": 0.737
-    },
-    {
-      "day": 164,
-      "steps": 1,
-      "observed_cells": 38916,
-      "simulated_cells": 52271,
-      "iou": 0.738
-    },
-    {
-      "day": 165,
-      "steps": 1,
-      "observed_cells": 39392,
-      "simulated_cells": 52877,
-      "iou": 0.738
-    },
-    {
-      "day": 166,
-      "steps": 1,
-      "observed_cells": 39873,
-      "simulated_cells": 53479,
-      "iou": 0.739
-    },
-    {
-      "day": 167,
-      "steps": 1,
-      "observed_cells": 40350,
-      "simulated_cells": 54040,
-      "iou": 0.74
-    },
-    {
-      "day": 168,
-      "steps": 1,
-      "observed_cells": 40799,
-      "simulated_cells": 54611,
-      "iou": 0.741
-    },
-    {
-      "day": 169,
-      "steps": 1,
-      "observed_cells": 41224,
-      "simulated_cells": 55211,
-      "iou": 0.741
-    },
-    {
-      "day": 170,
-      "steps": 1,
-      "observed_cells": 41650,
-      "simulated_cells": 55779,
-      "iou": 0.741
-    },
-    {
-      "day": 171,
-      "steps": 1,
-      "observed_cells": 42123,
-      "simulated_cells": 56356,
-      "iou": 0.742
-    },
-    {
-      "day": 172,
-      "steps": 1,
-      "observed_cells": 42600,
-      "simulated_cells": 56993,
-      "iou": 0.742
-    },
-    {
-      "day": 173,
-      "steps": 1,
-      "observed_cells": 43032,
-      "simulated_cells": 57628,
-      "iou": 0.741
-    },
-    {
-      "day": 174,
-      "steps": 1,
-      "observed_cells": 43403,
-      "simulated_cells": 58276,
-      "iou": 0.739
-    },
-    {
-      "day": 175,
-      "steps": 1,
-      "observed_cells": 43777,
-      "simulated_cells": 58933,
-      "iou": 0.738
-    },
-    {
-      "day": 176,
-      "steps": 1,
-      "observed_cells": 44153,
-      "simulated_cells": 59584,
-      "iou": 0.736
-    },
-    {
-      "day": 177,
-      "steps": 1,
-      "observed_cells": 44532,
-      "simulated_cells": 60202,
-      "iou": 0.735
-    },
-    {
-      "day": 178,
-      "steps": 1,
-      "observed_cells": 44908,
-      "simulated_cells": 60822,
-      "iou": 0.733
-    },
-    {
-      "day": 179,
-      "steps": 1,
-      "observed_cells": 45296,
-      "simulated_cells": 61456,
-      "iou": 0.732
-    },
-    {
-      "day": 180,
-      "steps": 1,
-      "observed_cells": 45687,
-      "simulated_cells": 62104,
-      "iou": 0.731
-    },
-    {
-      "day": 181,
-      "steps": 1,
-      "observed_cells": 46096,
-      "simulated_cells": 62792,
-      "iou": 0.729
-    },
-    {
-      "day": 182,
-      "steps": 1,
-      "observed_cells": 46507,
-      "simulated_cells": 63469,
-      "iou": 0.728
-    },
-    {
-      "day": 183,
-      "steps": 1,
-      "observed_cells": 46933,
-      "simulated_cells": 64182,
-      "iou": 0.727
-    },
-    {
-      "day": 184,
-      "steps": 1,
-      "observed_cells": 47378,
-      "simulated_cells": 64894,
-      "iou": 0.725
-    },
-    {
-      "day": 185,
-      "steps": 1,
-      "observed_cells": 47790,
-      "simulated_cells": 65606,
-      "iou": 0.724
-    },
-    {
-      "day": 186,
-      "steps": 1,
-      "observed_cells": 48190,
-      "simulated_cells": 66376,
-      "iou": 0.721
-    },
-    {
-      "day": 187,
-      "steps": 1,
-      "observed_cells": 48614,
-      "simulated_cells": 67174,
-      "iou": 0.719
-    },
-    {
-      "day": 188,
-      "steps": 1,
-      "observed_cells": 49049,
-      "simulated_cells": 67988,
-      "iou": 0.717
-    },
-    {
-      "day": 189,
-      "steps": 1,
-      "observed_cells": 49464,
-      "simulated_cells": 68808,
-      "iou": 0.714
-    },
-    {
-      "day": 190,
-      "steps": 1,
-      "observed_cells": 49885,
-      "simulated_cells": 69638,
-      "iou": 0.712
-    },
-    {
-      "day": 191,
-      "steps": 1,
-      "observed_cells": 50314,
-      "simulated_cells": 70475,
-      "iou": 0.709
-    },
-    {
-      "day": 192,
-      "steps": 1,
-      "observed_cells": 50744,
-      "simulated_cells": 71334,
-      "iou": 0.707
-    },
-    {
-      "day": 193,
-      "steps": 1,
-      "observed_cells": 51191,
-      "simulated_cells": 72211,
-      "iou": 0.704
-    },
-    {
-      "day": 194,
-      "steps": 1,
-      "observed_cells": 51633,
-      "simulated_cells": 73098,
-      "iou": 0.702
-    },
-    {
-      "day": 195,
-      "steps": 1,
-      "observed_cells": 52105,
-      "simulated_cells": 73971,
-      "iou": 0.7
-    },
-    {
-      "day": 196,
-      "steps": 1,
-      "observed_cells": 52564,
-      "simulated_cells": 74834,
-      "iou": 0.698
-    },
-    {
-      "day": 197,
-      "steps": 1,
-      "observed_cells": 52988,
-      "simulated_cells": 75715,
-      "iou": 0.696
-    },
-    {
-      "day": 198,
-      "steps": 1,
-      "observed_cells": 53424,
-      "simulated_cells": 76634,
+      "simulated_cells": 3102,
       "iou": 0.693
     },
     {
-      "day": 199,
-      "steps": 1,
-      "observed_cells": 53847,
-      "simulated_cells": 77572,
-      "iou": 0.69
-    },
-    {
-      "day": 200,
-      "steps": 1,
-      "observed_cells": 54288,
-      "simulated_cells": 78521,
-      "iou": 0.688
-    },
-    {
-      "day": 201,
-      "steps": 1,
-      "observed_cells": 54731,
-      "simulated_cells": 79481,
-      "iou": 0.685
-    },
-    {
-      "day": 202,
-      "steps": 1,
-      "observed_cells": 55177,
-      "simulated_cells": 80432,
-      "iou": 0.682
-    },
-    {
-      "day": 203,
-      "steps": 1,
-      "observed_cells": 55658,
-      "simulated_cells": 81444,
-      "iou": 0.68
-    },
-    {
-      "day": 204,
-      "steps": 1,
-      "observed_cells": 56129,
-      "simulated_cells": 82400,
-      "iou": 0.677
-    },
-    {
-      "day": 205,
-      "steps": 1,
-      "observed_cells": 56599,
-      "simulated_cells": 83366,
-      "iou": 0.675
-    },
-    {
-      "day": 206,
-      "steps": 1,
-      "observed_cells": 57065,
-      "simulated_cells": 84348,
-      "iou": 0.673
-    },
-    {
-      "day": 207,
-      "steps": 1,
-      "observed_cells": 57545,
-      "simulated_cells": 85326,
-      "iou": 0.67
-    },
-    {
-      "day": 208,
-      "steps": 1,
-      "observed_cells": 58022,
-      "simulated_cells": 86277,
-      "iou": 0.669
-    },
-    {
-      "day": 209,
-      "steps": 1,
-      "observed_cells": 58496,
-      "simulated_cells": 87245,
-      "iou": 0.667
-    },
-    {
-      "day": 210,
-      "steps": 1,
-      "observed_cells": 59003,
-      "simulated_cells": 88208,
-      "iou": 0.665
-    },
-    {
-      "day": 211,
-      "steps": 1,
-      "observed_cells": 59551,
-      "simulated_cells": 89179,
-      "iou": 0.664
-    },
-    {
-      "day": 212,
-      "steps": 1,
-      "observed_cells": 60111,
-      "simulated_cells": 90151,
-      "iou": 0.663
-    },
-    {
-      "day": 213,
-      "steps": 1,
-      "observed_cells": 60681,
-      "simulated_cells": 91129,
-      "iou": 0.662
-    },
-    {
-      "day": 214,
-      "steps": 1,
-      "observed_cells": 61259,
-      "simulated_cells": 92080,
-      "iou": 0.661
-    },
-    {
-      "day": 215,
-      "steps": 1,
-      "observed_cells": 61846,
-      "simulated_cells": 93053,
-      "iou": 0.661
-    },
-    {
-      "day": 216,
-      "steps": 1,
-      "observed_cells": 62457,
-      "simulated_cells": 94021,
-      "iou": 0.66
-    },
-    {
-      "day": 217,
-      "steps": 1,
-      "observed_cells": 63048,
-      "simulated_cells": 95004,
-      "iou": 0.66
-    },
-    {
-      "day": 218,
-      "steps": 1,
-      "observed_cells": 63646,
-      "simulated_cells": 96009,
-      "iou": 0.659
-    },
-    {
-      "day": 219,
-      "steps": 1,
-      "observed_cells": 64274,
-      "simulated_cells": 97060,
-      "iou": 0.658
-    },
-    {
-      "day": 220,
-      "steps": 1,
-      "observed_cells": 64892,
-      "simulated_cells": 98095,
-      "iou": 0.658
-    },
-    {
-      "day": 221,
-      "steps": 1,
-      "observed_cells": 65490,
-      "simulated_cells": 99160,
-      "iou": 0.656
-    },
-    {
-      "day": 222,
-      "steps": 1,
-      "observed_cells": 66105,
-      "simulated_cells": 100248,
-      "iou": 0.655
-    },
-    {
-      "day": 223,
-      "steps": 1,
-      "observed_cells": 66734,
-      "simulated_cells": 101307,
-      "iou": 0.655
-    },
-    {
-      "day": 224,
-      "steps": 1,
-      "observed_cells": 67327,
-      "simulated_cells": 102374,
-      "iou": 0.654
-    },
-    {
-      "day": 225,
-      "steps": 1,
-      "observed_cells": 67920,
-      "simulated_cells": 103464,
-      "iou": 0.653
-    },
-    {
-      "day": 226,
-      "steps": 1,
-      "observed_cells": 68519,
-      "simulated_cells": 104532,
-      "iou": 0.652
-    },
-    {
-      "day": 227,
-      "steps": 1,
-      "observed_cells": 69135,
-      "simulated_cells": 105596,
-      "iou": 0.651
-    },
-    {
-      "day": 228,
-      "steps": 1,
-      "observed_cells": 69762,
-      "simulated_cells": 106651,
-      "iou": 0.65
-    },
-    {
-      "day": 229,
-      "steps": 1,
-      "observed_cells": 70396,
-      "simulated_cells": 107698,
-      "iou": 0.65
-    },
-    {
-      "day": 230,
-      "steps": 1,
-      "observed_cells": 71008,
-      "simulated_cells": 108740,
-      "iou": 0.649
-    },
-    {
-      "day": 231,
-      "steps": 1,
-      "observed_cells": 71660,
-      "simulated_cells": 109788,
-      "iou": 0.649
-    },
-    {
-      "day": 232,
-      "steps": 1,
-      "observed_cells": 72307,
-      "simulated_cells": 110828,
-      "iou": 0.649
-    },
-    {
-      "day": 233,
-      "steps": 1,
-      "observed_cells": 72961,
-      "simulated_cells": 111884,
-      "iou": 0.648
-    },
-    {
-      "day": 234,
-      "steps": 1,
-      "observed_cells": 73674,
-      "simulated_cells": 112952,
-      "iou": 0.649
-    },
-    {
-      "day": 235,
-      "steps": 1,
-      "observed_cells": 74393,
-      "simulated_cells": 114028,
-      "iou": 0.649
-    },
-    {
-      "day": 236,
-      "steps": 1,
-      "observed_cells": 75143,
-      "simulated_cells": 115102,
-      "iou": 0.649
-    },
-    {
-      "day": 237,
-      "steps": 1,
-      "observed_cells": 75910,
-      "simulated_cells": 116161,
-      "iou": 0.65
-    },
-    {
-      "day": 238,
-      "steps": 1,
-      "observed_cells": 76640,
-      "simulated_cells": 117200,
-      "iou": 0.65
-    },
-    {
-      "day": 239,
-      "steps": 1,
-      "observed_cells": 77400,
-      "simulated_cells": 118225,
-      "iou": 0.651
-    },
-    {
-      "day": 240,
-      "steps": 1,
-      "observed_cells": 78147,
-      "simulated_cells": 119271,
-      "iou": 0.652
-    },
-    {
-      "day": 241,
-      "steps": 1,
-      "observed_cells": 78899,
-      "simulated_cells": 120353,
-      "iou": 0.652
-    },
-    {
-      "day": 242,
-      "steps": 1,
-      "observed_cells": 79628,
-      "simulated_cells": 121470,
-      "iou": 0.652
-    },
-    {
-      "day": 243,
-      "steps": 1,
-      "observed_cells": 80374,
-      "simulated_cells": 122582,
-      "iou": 0.652
-    },
-    {
-      "day": 244,
-      "steps": 1,
-      "observed_cells": 81114,
-      "simulated_cells": 123716,
-      "iou": 0.652
-    },
-    {
-      "day": 245,
-      "steps": 1,
-      "observed_cells": 81848,
-      "simulated_cells": 124834,
-      "iou": 0.652
-    },
-    {
-      "day": 246,
-      "steps": 1,
-      "observed_cells": 82569,
-      "simulated_cells": 125968,
-      "iou": 0.652
-    },
-    {
-      "day": 247,
-      "steps": 1,
-      "observed_cells": 83280,
-      "simulated_cells": 127054,
-      "iou": 0.652
-    },
-    {
-      "day": 248,
-      "steps": 1,
-      "observed_cells": 84025,
-      "simulated_cells": 128195,
-      "iou": 0.652
-    },
-    {
-      "day": 249,
-      "steps": 1,
-      "observed_cells": 84802,
-      "simulated_cells": 129297,
-      "iou": 0.652
-    },
-    {
-      "day": 250,
-      "steps": 1,
-      "observed_cells": 85581,
-      "simulated_cells": 130436,
-      "iou": 0.653
-    },
-    {
-      "day": 251,
-      "steps": 1,
-      "observed_cells": 86428,
-      "simulated_cells": 131574,
-      "iou": 0.653
-    },
-    {
-      "day": 252,
-      "steps": 1,
-      "observed_cells": 87291,
-      "simulated_cells": 132726,
-      "iou": 0.654
-    },
-    {
-      "day": 253,
-      "steps": 1,
-      "observed_cells": 88172,
-      "simulated_cells": 133863,
-      "iou": 0.655
-    },
-    {
-      "day": 254,
-      "steps": 1,
-      "observed_cells": 89087,
-      "simulated_cells": 135021,
-      "iou": 0.656
-    },
-    {
-      "day": 255,
-      "steps": 1,
-      "observed_cells": 90010,
-      "simulated_cells": 136195,
-      "iou": 0.657
-    },
-    {
-      "day": 256,
-      "steps": 1,
-      "observed_cells": 90963,
-      "simulated_cells": 137370,
-      "iou": 0.659
-    },
-    {
-      "day": 257,
-      "steps": 1,
-      "observed_cells": 91924,
-      "simulated_cells": 138530,
-      "iou": 0.66
-    },
-    {
-      "day": 258,
-      "steps": 1,
-      "observed_cells": 92894,
-      "simulated_cells": 139659,
-      "iou": 0.661
-    },
-    {
-      "day": 259,
-      "steps": 1,
-      "observed_cells": 93897,
-      "simulated_cells": 140804,
-      "iou": 0.663
-    },
-    {
-      "day": 260,
-      "steps": 1,
-      "observed_cells": 94885,
-      "simulated_cells": 141920,
-      "iou": 0.665
-    },
-    {
-      "day": 261,
-      "steps": 1,
-      "observed_cells": 95889,
-      "simulated_cells": 143041,
-      "iou": 0.667
-    },
-    {
-      "day": 262,
-      "steps": 1,
-      "observed_cells": 96853,
-      "simulated_cells": 144198,
-      "iou": 0.668
-    },
-    {
-      "day": 263,
-      "steps": 1,
-      "observed_cells": 97803,
-      "simulated_cells": 145428,
-      "iou": 0.669
-    },
-    {
-      "day": 264,
-      "steps": 1,
-      "observed_cells": 98770,
-      "simulated_cells": 146650,
-      "iou": 0.67
-    },
-    {
-      "day": 265,
-      "steps": 1,
-      "observed_cells": 99701,
-      "simulated_cells": 147874,
-      "iou": 0.671
-    },
-    {
-      "day": 266,
-      "steps": 1,
-      "observed_cells": 100628,
-      "simulated_cells": 149130,
-      "iou": 0.671
-    },
-    {
-      "day": 267,
-      "steps": 1,
-      "observed_cells": 101558,
-      "simulated_cells": 150364,
-      "iou": 0.672
-    },
-    {
-      "day": 268,
-      "steps": 1,
-      "observed_cells": 102476,
-      "simulated_cells": 151610,
-      "iou": 0.672
-    },
-    {
-      "day": 269,
-      "steps": 1,
-      "observed_cells": 103400,
-      "simulated_cells": 152876,
-      "iou": 0.672
-    },
-    {
-      "day": 270,
-      "steps": 1,
-      "observed_cells": 104323,
-      "simulated_cells": 154096,
-      "iou": 0.673
-    },
-    {
-      "day": 271,
-      "steps": 1,
-      "observed_cells": 105263,
-      "simulated_cells": 155352,
-      "iou": 0.674
-    },
-    {
-      "day": 272,
-      "steps": 1,
-      "observed_cells": 106226,
-      "simulated_cells": 156624,
-      "iou": 0.674
-    },
-    {
-      "day": 273,
-      "steps": 1,
-      "observed_cells": 107198,
-      "simulated_cells": 157872,
-      "iou": 0.675
-    },
-    {
-      "day": 274,
-      "steps": 1,
-      "observed_cells": 108177,
-      "simulated_cells": 159098,
-      "iou": 0.676
-    },
-    {
-      "day": 275,
-      "steps": 1,
-      "observed_cells": 109140,
-      "simulated_cells": 160310,
-      "iou": 0.677
-    },
-    {
-      "day": 276,
-      "steps": 1,
-      "observed_cells": 110109,
-      "simulated_cells": 161509,
-      "iou": 0.678
-    },
-    {
-      "day": 277,
-      "steps": 1,
-      "observed_cells": 111095,
-      "simulated_cells": 162722,
-      "iou": 0.679
-    },
-    {
-      "day": 278,
-      "steps": 1,
-      "observed_cells": 112051,
-      "simulated_cells": 163939,
-      "iou": 0.68
-    },
-    {
-      "day": 279,
-      "steps": 1,
-      "observed_cells": 113000,
-      "simulated_cells": 165141,
-      "iou": 0.681
-    },
-    {
-      "day": 280,
-      "steps": 1,
-      "observed_cells": 113951,
-      "simulated_cells": 166325,
-      "iou": 0.681
-    },
-    {
-      "day": 281,
-      "steps": 1,
-      "observed_cells": 114904,
-      "simulated_cells": 167524,
-      "iou": 0.682
-    },
-    {
-      "day": 282,
-      "steps": 1,
-      "observed_cells": 115880,
-      "simulated_cells": 168704,
+      "step": 39,
+      "wind_map": 3,
+      "observed_cells": 2259,
+      "simulated_cells": 3255,
       "iou": 0.683
     },
     {
-      "day": 283,
-      "steps": 1,
-      "observed_cells": 116893,
-      "simulated_cells": 169891,
-      "iou": 0.684
+      "step": 40,
+      "wind_map": 3,
+      "observed_cells": 2340,
+      "simulated_cells": 3398,
+      "iou": 0.678
     },
     {
-      "day": 284,
-      "steps": 1,
-      "observed_cells": 117901,
-      "simulated_cells": 171078,
-      "iou": 0.685
+      "step": 41,
+      "wind_map": 3,
+      "observed_cells": 2431,
+      "simulated_cells": 3532,
+      "iou": 0.676
     },
     {
-      "day": 285,
-      "steps": 1,
-      "observed_cells": 118911,
-      "simulated_cells": 172252,
-      "iou": 0.687
+      "step": 42,
+      "wind_map": 3,
+      "observed_cells": 2542,
+      "simulated_cells": 3682,
+      "iou": 0.674
     },
     {
-      "day": 286,
-      "steps": 1,
-      "observed_cells": 119938,
-      "simulated_cells": 173431,
-      "iou": 0.688
+      "step": 43,
+      "wind_map": 3,
+      "observed_cells": 2666,
+      "simulated_cells": 3842,
+      "iou": 0.676
     },
     {
-      "day": 287,
-      "steps": 1,
-      "observed_cells": 120943,
-      "simulated_cells": 174591,
+      "step": 44,
+      "wind_map": 3,
+      "observed_cells": 2792,
+      "simulated_cells": 4020,
+      "iou": 0.675
+    },
+    {
+      "step": 45,
+      "wind_map": 3,
+      "observed_cells": 2927,
+      "simulated_cells": 4179,
+      "iou": 0.682
+    },
+    {
+      "step": 46,
+      "wind_map": 4,
+      "observed_cells": 3054,
+      "simulated_cells": 4318,
       "iou": 0.689
     },
     {
-      "day": 288,
-      "steps": 1,
-      "observed_cells": 121953,
-      "simulated_cells": 175719,
-      "iou": 0.69
+      "step": 47,
+      "wind_map": 4,
+      "observed_cells": 3174,
+      "simulated_cells": 4481,
+      "iou": 0.689
     },
     {
-      "day": 289,
-      "steps": 1,
-      "observed_cells": 122995,
-      "simulated_cells": 176867,
-      "iou": 0.692
-    },
-    {
-      "day": 290,
-      "steps": 1,
-      "observed_cells": 124056,
-      "simulated_cells": 178010,
-      "iou": 0.693
-    },
-    {
-      "day": 291,
-      "steps": 1,
-      "observed_cells": 125070,
-      "simulated_cells": 179156,
+      "step": 48,
+      "wind_map": 4,
+      "observed_cells": 3306,
+      "simulated_cells": 4644,
       "iou": 0.694
     },
     {
-      "day": 292,
-      "steps": 1,
-      "observed_cells": 126072,
-      "simulated_cells": 180302,
-      "iou": 0.695
+      "step": 49,
+      "wind_map": 4,
+      "observed_cells": 3435,
+      "simulated_cells": 4806,
+      "iou": 0.701
     },
     {
-      "day": 293,
-      "steps": 1,
-      "observed_cells": 127055,
-      "simulated_cells": 181416,
-      "iou": 0.696
+      "step": 50,
+      "wind_map": 4,
+      "observed_cells": 3566,
+      "simulated_cells": 4967,
+      "iou": 0.706
     },
     {
-      "day": 294,
-      "steps": 1,
-      "observed_cells": 128044,
-      "simulated_cells": 182534,
-      "iou": 0.697
+      "step": 51,
+      "wind_map": 4,
+      "observed_cells": 3700,
+      "simulated_cells": 5117,
+      "iou": 0.71
     },
     {
-      "day": 295,
-      "steps": 1,
-      "observed_cells": 129020,
-      "simulated_cells": 183636,
+      "step": 52,
+      "wind_map": 4,
+      "observed_cells": 3835,
+      "simulated_cells": 5285,
+      "iou": 0.713
+    },
+    {
+      "step": 53,
+      "wind_map": 4,
+      "observed_cells": 3978,
+      "simulated_cells": 5475,
+      "iou": 0.714
+    },
+    {
+      "step": 54,
+      "wind_map": 4,
+      "observed_cells": 4126,
+      "simulated_cells": 5674,
+      "iou": 0.713
+    },
+    {
+      "step": 55,
+      "wind_map": 4,
+      "observed_cells": 4275,
+      "simulated_cells": 5883,
+      "iou": 0.711
+    },
+    {
+      "step": 56,
+      "wind_map": 4,
+      "observed_cells": 4420,
+      "simulated_cells": 6086,
+      "iou": 0.707
+    },
+    {
+      "step": 57,
+      "wind_map": 4,
+      "observed_cells": 4573,
+      "simulated_cells": 6299,
+      "iou": 0.705
+    },
+    {
+      "step": 58,
+      "wind_map": 4,
+      "observed_cells": 4737,
+      "simulated_cells": 6512,
+      "iou": 0.703
+    },
+    {
+      "step": 59,
+      "wind_map": 4,
+      "observed_cells": 4889,
+      "simulated_cells": 6734,
       "iou": 0.698
     },
     {
-      "day": 296,
-      "steps": 1,
-      "observed_cells": 129970,
-      "simulated_cells": 184790,
+      "step": 60,
+      "wind_map": 4,
+      "observed_cells": 5053,
+      "simulated_cells": 6965,
+      "iou": 0.695
+    },
+    {
+      "step": 61,
+      "wind_map": 5,
+      "observed_cells": 5224,
+      "simulated_cells": 7188,
+      "iou": 0.694
+    },
+    {
+      "step": 62,
+      "wind_map": 5,
+      "observed_cells": 5402,
+      "simulated_cells": 7400,
+      "iou": 0.697
+    },
+    {
+      "step": 63,
+      "wind_map": 5,
+      "observed_cells": 5605,
+      "simulated_cells": 7633,
+      "iou": 0.7
+    },
+    {
+      "step": 64,
+      "wind_map": 5,
+      "observed_cells": 5812,
+      "simulated_cells": 7865,
+      "iou": 0.703
+    },
+    {
+      "step": 65,
+      "wind_map": 5,
+      "observed_cells": 6031,
+      "simulated_cells": 8093,
+      "iou": 0.706
+    },
+    {
+      "step": 66,
+      "wind_map": 5,
+      "observed_cells": 6239,
+      "simulated_cells": 8343,
+      "iou": 0.709
+    },
+    {
+      "step": 67,
+      "wind_map": 5,
+      "observed_cells": 6464,
+      "simulated_cells": 8598,
+      "iou": 0.715
+    },
+    {
+      "step": 68,
+      "wind_map": 5,
+      "observed_cells": 6693,
+      "simulated_cells": 8864,
+      "iou": 0.722
+    },
+    {
+      "step": 69,
+      "wind_map": 5,
+      "observed_cells": 6926,
+      "simulated_cells": 9134,
+      "iou": 0.729
+    },
+    {
+      "step": 70,
+      "wind_map": 5,
+      "observed_cells": 7159,
+      "simulated_cells": 9410,
+      "iou": 0.736
+    },
+    {
+      "step": 71,
+      "wind_map": 5,
+      "observed_cells": 7381,
+      "simulated_cells": 9702,
+      "iou": 0.739
+    },
+    {
+      "step": 72,
+      "wind_map": 5,
+      "observed_cells": 7592,
+      "simulated_cells": 9972,
+      "iou": 0.742
+    },
+    {
+      "step": 73,
+      "wind_map": 5,
+      "observed_cells": 7795,
+      "simulated_cells": 10247,
+      "iou": 0.743
+    },
+    {
+      "step": 74,
+      "wind_map": 5,
+      "observed_cells": 7993,
+      "simulated_cells": 10518,
+      "iou": 0.743
+    },
+    {
+      "step": 75,
+      "wind_map": 5,
+      "observed_cells": 8189,
+      "simulated_cells": 10802,
+      "iou": 0.74
+    },
+    {
+      "step": 76,
+      "wind_map": 6,
+      "observed_cells": 8398,
+      "simulated_cells": 11085,
+      "iou": 0.739
+    },
+    {
+      "step": 77,
+      "wind_map": 6,
+      "observed_cells": 8626,
+      "simulated_cells": 11375,
+      "iou": 0.739
+    },
+    {
+      "step": 78,
+      "wind_map": 6,
+      "observed_cells": 8867,
+      "simulated_cells": 11649,
+      "iou": 0.742
+    },
+    {
+      "step": 79,
+      "wind_map": 6,
+      "observed_cells": 9108,
+      "simulated_cells": 11922,
+      "iou": 0.745
+    },
+    {
+      "step": 80,
+      "wind_map": 6,
+      "observed_cells": 9358,
+      "simulated_cells": 12206,
+      "iou": 0.748
+    },
+    {
+      "step": 81,
+      "wind_map": 6,
+      "observed_cells": 9614,
+      "simulated_cells": 12505,
+      "iou": 0.751
+    },
+    {
+      "step": 82,
+      "wind_map": 6,
+      "observed_cells": 9859,
+      "simulated_cells": 12806,
+      "iou": 0.753
+    },
+    {
+      "step": 83,
+      "wind_map": 6,
+      "observed_cells": 10081,
+      "simulated_cells": 13105,
+      "iou": 0.753
+    },
+    {
+      "step": 84,
+      "wind_map": 6,
+      "observed_cells": 10315,
+      "simulated_cells": 13401,
+      "iou": 0.754
+    },
+    {
+      "step": 85,
+      "wind_map": 6,
+      "observed_cells": 10554,
+      "simulated_cells": 13705,
+      "iou": 0.754
+    },
+    {
+      "step": 86,
+      "wind_map": 6,
+      "observed_cells": 10794,
+      "simulated_cells": 14023,
+      "iou": 0.753
+    },
+    {
+      "step": 87,
+      "wind_map": 6,
+      "observed_cells": 11045,
+      "simulated_cells": 14349,
+      "iou": 0.754
+    },
+    {
+      "step": 88,
+      "wind_map": 6,
+      "observed_cells": 11294,
+      "simulated_cells": 14689,
+      "iou": 0.754
+    },
+    {
+      "step": 89,
+      "wind_map": 6,
+      "observed_cells": 11534,
+      "simulated_cells": 15034,
+      "iou": 0.754
+    },
+    {
+      "step": 90,
+      "wind_map": 6,
+      "observed_cells": 11775,
+      "simulated_cells": 15394,
+      "iou": 0.754
+    },
+    {
+      "step": 91,
+      "wind_map": 7,
+      "observed_cells": 12023,
+      "simulated_cells": 15759,
+      "iou": 0.753
+    },
+    {
+      "step": 92,
+      "wind_map": 7,
+      "observed_cells": 12248,
+      "simulated_cells": 16141,
+      "iou": 0.75
+    },
+    {
+      "step": 93,
+      "wind_map": 7,
+      "observed_cells": 12468,
+      "simulated_cells": 16516,
+      "iou": 0.748
+    },
+    {
+      "step": 94,
+      "wind_map": 7,
+      "observed_cells": 12692,
+      "simulated_cells": 16893,
+      "iou": 0.747
+    },
+    {
+      "step": 95,
+      "wind_map": 7,
+      "observed_cells": 12912,
+      "simulated_cells": 17270,
+      "iou": 0.744
+    },
+    {
+      "step": 96,
+      "wind_map": 7,
+      "observed_cells": 13138,
+      "simulated_cells": 17623,
+      "iou": 0.742
+    },
+    {
+      "step": 97,
+      "wind_map": 7,
+      "observed_cells": 13390,
+      "simulated_cells": 17957,
+      "iou": 0.742
+    },
+    {
+      "step": 98,
+      "wind_map": 7,
+      "observed_cells": 13643,
+      "simulated_cells": 18307,
+      "iou": 0.741
+    },
+    {
+      "step": 99,
+      "wind_map": 7,
+      "observed_cells": 13916,
+      "simulated_cells": 18657,
+      "iou": 0.741
+    },
+    {
+      "step": 100,
+      "wind_map": 7,
+      "observed_cells": 14203,
+      "simulated_cells": 19025,
+      "iou": 0.742
+    },
+    {
+      "step": 101,
+      "wind_map": 7,
+      "observed_cells": 14495,
+      "simulated_cells": 19399,
+      "iou": 0.742
+    },
+    {
+      "step": 102,
+      "wind_map": 7,
+      "observed_cells": 14792,
+      "simulated_cells": 19767,
+      "iou": 0.743
+    },
+    {
+      "step": 103,
+      "wind_map": 7,
+      "observed_cells": 15125,
+      "simulated_cells": 20146,
+      "iou": 0.746
+    },
+    {
+      "step": 104,
+      "wind_map": 7,
+      "observed_cells": 15471,
+      "simulated_cells": 20532,
+      "iou": 0.749
+    },
+    {
+      "step": 105,
+      "wind_map": 7,
+      "observed_cells": 15806,
+      "simulated_cells": 20918,
+      "iou": 0.751
+    },
+    {
+      "step": 106,
+      "wind_map": 8,
+      "observed_cells": 16129,
+      "simulated_cells": 21319,
+      "iou": 0.752
+    },
+    {
+      "step": 107,
+      "wind_map": 8,
+      "observed_cells": 16435,
+      "simulated_cells": 21738,
+      "iou": 0.752
+    },
+    {
+      "step": 108,
+      "wind_map": 8,
+      "observed_cells": 16735,
+      "simulated_cells": 22154,
+      "iou": 0.752
+    },
+    {
+      "step": 109,
+      "wind_map": 8,
+      "observed_cells": 17035,
+      "simulated_cells": 22586,
+      "iou": 0.751
+    },
+    {
+      "step": 110,
+      "wind_map": 8,
+      "observed_cells": 17340,
+      "simulated_cells": 23015,
+      "iou": 0.75
+    },
+    {
+      "step": 111,
+      "wind_map": 8,
+      "observed_cells": 17655,
+      "simulated_cells": 23467,
+      "iou": 0.748
+    },
+    {
+      "step": 112,
+      "wind_map": 8,
+      "observed_cells": 17980,
+      "simulated_cells": 23926,
+      "iou": 0.746
+    },
+    {
+      "step": 113,
+      "wind_map": 8,
+      "observed_cells": 18296,
+      "simulated_cells": 24374,
+      "iou": 0.744
+    },
+    {
+      "step": 114,
+      "wind_map": 8,
+      "observed_cells": 18611,
+      "simulated_cells": 24823,
+      "iou": 0.743
+    },
+    {
+      "step": 115,
+      "wind_map": 8,
+      "observed_cells": 18940,
+      "simulated_cells": 25287,
+      "iou": 0.742
+    },
+    {
+      "step": 116,
+      "wind_map": 8,
+      "observed_cells": 19283,
+      "simulated_cells": 25753,
+      "iou": 0.742
+    },
+    {
+      "step": 117,
+      "wind_map": 8,
+      "observed_cells": 19642,
+      "simulated_cells": 26222,
+      "iou": 0.742
+    },
+    {
+      "step": 118,
+      "wind_map": 8,
+      "observed_cells": 19976,
+      "simulated_cells": 26698,
+      "iou": 0.741
+    },
+    {
+      "step": 119,
+      "wind_map": 8,
+      "observed_cells": 20316,
+      "simulated_cells": 27175,
+      "iou": 0.74
+    },
+    {
+      "step": 120,
+      "wind_map": 8,
+      "observed_cells": 20677,
+      "simulated_cells": 27646,
+      "iou": 0.74
+    },
+    {
+      "step": 121,
+      "wind_map": 9,
+      "observed_cells": 21030,
+      "simulated_cells": 28139,
+      "iou": 0.739
+    },
+    {
+      "step": 122,
+      "wind_map": 9,
+      "observed_cells": 21405,
+      "simulated_cells": 28651,
+      "iou": 0.739
+    },
+    {
+      "step": 123,
+      "wind_map": 9,
+      "observed_cells": 21794,
+      "simulated_cells": 29180,
+      "iou": 0.739
+    },
+    {
+      "step": 124,
+      "wind_map": 9,
+      "observed_cells": 22190,
+      "simulated_cells": 29710,
+      "iou": 0.739
+    },
+    {
+      "step": 125,
+      "wind_map": 9,
+      "observed_cells": 22579,
+      "simulated_cells": 30217,
+      "iou": 0.739
+    },
+    {
+      "step": 126,
+      "wind_map": 9,
+      "observed_cells": 22970,
+      "simulated_cells": 30738,
+      "iou": 0.739
+    },
+    {
+      "step": 127,
+      "wind_map": 9,
+      "observed_cells": 23379,
+      "simulated_cells": 31256,
+      "iou": 0.739
+    },
+    {
+      "step": 128,
+      "wind_map": 9,
+      "observed_cells": 23789,
+      "simulated_cells": 31766,
+      "iou": 0.74
+    },
+    {
+      "step": 129,
+      "wind_map": 9,
+      "observed_cells": 24201,
+      "simulated_cells": 32306,
+      "iou": 0.74
+    },
+    {
+      "step": 130,
+      "wind_map": 9,
+      "observed_cells": 24602,
+      "simulated_cells": 32847,
+      "iou": 0.74
+    },
+    {
+      "step": 131,
+      "wind_map": 9,
+      "observed_cells": 25008,
+      "simulated_cells": 33395,
+      "iou": 0.74
+    },
+    {
+      "step": 132,
+      "wind_map": 9,
+      "observed_cells": 25423,
+      "simulated_cells": 33974,
+      "iou": 0.739
+    },
+    {
+      "step": 133,
+      "wind_map": 9,
+      "observed_cells": 25844,
+      "simulated_cells": 34537,
+      "iou": 0.74
+    },
+    {
+      "step": 134,
+      "wind_map": 9,
+      "observed_cells": 26284,
+      "simulated_cells": 35062,
+      "iou": 0.741
+    },
+    {
+      "step": 135,
+      "wind_map": 9,
+      "observed_cells": 26709,
+      "simulated_cells": 35593,
+      "iou": 0.741
+    },
+    {
+      "step": 136,
+      "wind_map": 10,
+      "observed_cells": 27135,
+      "simulated_cells": 36146,
+      "iou": 0.742
+    },
+    {
+      "step": 137,
+      "wind_map": 10,
+      "observed_cells": 27571,
+      "simulated_cells": 36689,
+      "iou": 0.743
+    },
+    {
+      "step": 138,
+      "wind_map": 10,
+      "observed_cells": 28036,
+      "simulated_cells": 37242,
+      "iou": 0.744
+    },
+    {
+      "step": 139,
+      "wind_map": 10,
+      "observed_cells": 28509,
+      "simulated_cells": 37807,
+      "iou": 0.745
+    },
+    {
+      "step": 140,
+      "wind_map": 10,
+      "observed_cells": 28964,
+      "simulated_cells": 38380,
+      "iou": 0.746
+    },
+    {
+      "step": 141,
+      "wind_map": 10,
+      "observed_cells": 29384,
+      "simulated_cells": 38955,
+      "iou": 0.746
+    },
+    {
+      "step": 142,
+      "wind_map": 10,
+      "observed_cells": 29772,
+      "simulated_cells": 39527,
+      "iou": 0.745
+    },
+    {
+      "step": 143,
+      "wind_map": 10,
+      "observed_cells": 30156,
+      "simulated_cells": 40095,
+      "iou": 0.745
+    },
+    {
+      "step": 144,
+      "wind_map": 10,
+      "observed_cells": 30558,
+      "simulated_cells": 40654,
+      "iou": 0.744
+    },
+    {
+      "step": 145,
+      "wind_map": 10,
+      "observed_cells": 30943,
+      "simulated_cells": 41226,
+      "iou": 0.743
+    },
+    {
+      "step": 146,
+      "wind_map": 10,
+      "observed_cells": 31338,
+      "simulated_cells": 41800,
+      "iou": 0.741
+    },
+    {
+      "step": 147,
+      "wind_map": 10,
+      "observed_cells": 31722,
+      "simulated_cells": 42366,
+      "iou": 0.74
+    },
+    {
+      "step": 148,
+      "wind_map": 10,
+      "observed_cells": 32112,
+      "simulated_cells": 42956,
+      "iou": 0.739
+    },
+    {
+      "step": 149,
+      "wind_map": 10,
+      "observed_cells": 32494,
+      "simulated_cells": 43568,
+      "iou": 0.737
+    },
+    {
+      "step": 150,
+      "wind_map": 10,
+      "observed_cells": 32883,
+      "simulated_cells": 44187,
+      "iou": 0.735
+    },
+    {
+      "step": 151,
+      "wind_map": 11,
+      "observed_cells": 33247,
+      "simulated_cells": 44797,
+      "iou": 0.732
+    },
+    {
+      "step": 152,
+      "wind_map": 11,
+      "observed_cells": 33623,
+      "simulated_cells": 45449,
+      "iou": 0.73
+    },
+    {
+      "step": 153,
+      "wind_map": 11,
+      "observed_cells": 34025,
+      "simulated_cells": 46114,
+      "iou": 0.728
+    },
+    {
+      "step": 154,
+      "wind_map": 11,
+      "observed_cells": 34420,
+      "simulated_cells": 46761,
+      "iou": 0.726
+    },
+    {
+      "step": 155,
+      "wind_map": 11,
+      "observed_cells": 34821,
+      "simulated_cells": 47399,
+      "iou": 0.724
+    },
+    {
+      "step": 156,
+      "wind_map": 11,
+      "observed_cells": 35234,
+      "simulated_cells": 48026,
+      "iou": 0.724
+    },
+    {
+      "step": 157,
+      "wind_map": 11,
+      "observed_cells": 35651,
+      "simulated_cells": 48689,
+      "iou": 0.723
+    },
+    {
+      "step": 158,
+      "wind_map": 11,
+      "observed_cells": 36078,
+      "simulated_cells": 49339,
+      "iou": 0.722
+    },
+    {
+      "step": 159,
+      "wind_map": 11,
+      "observed_cells": 36518,
+      "simulated_cells": 49974,
+      "iou": 0.722
+    },
+    {
+      "step": 160,
+      "wind_map": 11,
+      "observed_cells": 36961,
+      "simulated_cells": 50622,
+      "iou": 0.721
+    },
+    {
+      "step": 161,
+      "wind_map": 11,
+      "observed_cells": 37450,
+      "simulated_cells": 51261,
+      "iou": 0.722
+    },
+    {
+      "step": 162,
+      "wind_map": 11,
+      "observed_cells": 37939,
+      "simulated_cells": 51885,
+      "iou": 0.723
+    },
+    {
+      "step": 163,
+      "wind_map": 11,
+      "observed_cells": 38430,
+      "simulated_cells": 52505,
+      "iou": 0.724
+    },
+    {
+      "step": 164,
+      "wind_map": 11,
+      "observed_cells": 38916,
+      "simulated_cells": 53130,
+      "iou": 0.724
+    },
+    {
+      "step": 165,
+      "wind_map": 11,
+      "observed_cells": 39392,
+      "simulated_cells": 53753,
+      "iou": 0.725
+    },
+    {
+      "step": 166,
+      "wind_map": 12,
+      "observed_cells": 39873,
+      "simulated_cells": 54348,
+      "iou": 0.725
+    },
+    {
+      "step": 167,
+      "wind_map": 12,
+      "observed_cells": 40350,
+      "simulated_cells": 54936,
+      "iou": 0.726
+    },
+    {
+      "step": 168,
+      "wind_map": 12,
+      "observed_cells": 40799,
+      "simulated_cells": 55527,
+      "iou": 0.726
+    },
+    {
+      "step": 169,
+      "wind_map": 12,
+      "observed_cells": 41224,
+      "simulated_cells": 56153,
+      "iou": 0.726
+    },
+    {
+      "step": 170,
+      "wind_map": 12,
+      "observed_cells": 41650,
+      "simulated_cells": 56776,
+      "iou": 0.726
+    },
+    {
+      "step": 171,
+      "wind_map": 12,
+      "observed_cells": 42123,
+      "simulated_cells": 57426,
+      "iou": 0.726
+    },
+    {
+      "step": 172,
+      "wind_map": 12,
+      "observed_cells": 42600,
+      "simulated_cells": 58113,
+      "iou": 0.726
+    },
+    {
+      "step": 173,
+      "wind_map": 12,
+      "observed_cells": 43032,
+      "simulated_cells": 58791,
+      "iou": 0.726
+    },
+    {
+      "step": 174,
+      "wind_map": 12,
+      "observed_cells": 43403,
+      "simulated_cells": 59480,
+      "iou": 0.724
+    },
+    {
+      "step": 175,
+      "wind_map": 12,
+      "observed_cells": 43777,
+      "simulated_cells": 60160,
+      "iou": 0.722
+    },
+    {
+      "step": 176,
+      "wind_map": 12,
+      "observed_cells": 44153,
+      "simulated_cells": 60833,
+      "iou": 0.72
+    },
+    {
+      "step": 177,
+      "wind_map": 12,
+      "observed_cells": 44532,
+      "simulated_cells": 61519,
+      "iou": 0.719
+    },
+    {
+      "step": 178,
+      "wind_map": 12,
+      "observed_cells": 44908,
+      "simulated_cells": 62194,
+      "iou": 0.717
+    },
+    {
+      "step": 179,
+      "wind_map": 12,
+      "observed_cells": 45296,
+      "simulated_cells": 62888,
+      "iou": 0.715
+    },
+    {
+      "step": 180,
+      "wind_map": 12,
+      "observed_cells": 45687,
+      "simulated_cells": 63593,
+      "iou": 0.713
+    },
+    {
+      "step": 181,
+      "wind_map": 13,
+      "observed_cells": 46096,
+      "simulated_cells": 64273,
+      "iou": 0.712
+    },
+    {
+      "step": 182,
+      "wind_map": 13,
+      "observed_cells": 46507,
+      "simulated_cells": 64971,
+      "iou": 0.711
+    },
+    {
+      "step": 183,
+      "wind_map": 13,
+      "observed_cells": 46933,
+      "simulated_cells": 65713,
+      "iou": 0.71
+    },
+    {
+      "step": 184,
+      "wind_map": 13,
+      "observed_cells": 47378,
+      "simulated_cells": 66482,
+      "iou": 0.708
+    },
+    {
+      "step": 185,
+      "wind_map": 13,
+      "observed_cells": 47790,
+      "simulated_cells": 67266,
+      "iou": 0.706
+    },
+    {
+      "step": 186,
+      "wind_map": 13,
+      "observed_cells": 48190,
+      "simulated_cells": 68047,
+      "iou": 0.704
+    },
+    {
+      "step": 187,
+      "wind_map": 13,
+      "observed_cells": 48614,
+      "simulated_cells": 68867,
+      "iou": 0.701
+    },
+    {
+      "step": 188,
+      "wind_map": 13,
+      "observed_cells": 49049,
+      "simulated_cells": 69711,
       "iou": 0.699
     },
     {
-      "day": 297,
-      "steps": 1,
+      "step": 189,
+      "wind_map": 13,
+      "observed_cells": 49464,
+      "simulated_cells": 70581,
+      "iou": 0.696
+    },
+    {
+      "step": 190,
+      "wind_map": 13,
+      "observed_cells": 49885,
+      "simulated_cells": 71437,
+      "iou": 0.693
+    },
+    {
+      "step": 191,
+      "wind_map": 13,
+      "observed_cells": 50314,
+      "simulated_cells": 72313,
+      "iou": 0.691
+    },
+    {
+      "step": 192,
+      "wind_map": 13,
+      "observed_cells": 50744,
+      "simulated_cells": 73235,
+      "iou": 0.688
+    },
+    {
+      "step": 193,
+      "wind_map": 13,
+      "observed_cells": 51191,
+      "simulated_cells": 74179,
+      "iou": 0.685
+    },
+    {
+      "step": 194,
+      "wind_map": 13,
+      "observed_cells": 51633,
+      "simulated_cells": 75152,
+      "iou": 0.682
+    },
+    {
+      "step": 195,
+      "wind_map": 13,
+      "observed_cells": 52105,
+      "simulated_cells": 76110,
+      "iou": 0.68
+    },
+    {
+      "step": 196,
+      "wind_map": 14,
+      "observed_cells": 52564,
+      "simulated_cells": 77078,
+      "iou": 0.677
+    },
+    {
+      "step": 197,
+      "wind_map": 14,
+      "observed_cells": 52988,
+      "simulated_cells": 78035,
+      "iou": 0.674
+    },
+    {
+      "step": 198,
+      "wind_map": 14,
+      "observed_cells": 53424,
+      "simulated_cells": 79016,
+      "iou": 0.671
+    },
+    {
+      "step": 199,
+      "wind_map": 14,
+      "observed_cells": 53847,
+      "simulated_cells": 79988,
+      "iou": 0.668
+    },
+    {
+      "step": 200,
+      "wind_map": 14,
+      "observed_cells": 54288,
+      "simulated_cells": 81009,
+      "iou": 0.665
+    },
+    {
+      "step": 201,
+      "wind_map": 14,
+      "observed_cells": 54731,
+      "simulated_cells": 82030,
+      "iou": 0.662
+    },
+    {
+      "step": 202,
+      "wind_map": 14,
+      "observed_cells": 55177,
+      "simulated_cells": 83088,
+      "iou": 0.659
+    },
+    {
+      "step": 203,
+      "wind_map": 14,
+      "observed_cells": 55658,
+      "simulated_cells": 84180,
+      "iou": 0.657
+    },
+    {
+      "step": 204,
+      "wind_map": 14,
+      "observed_cells": 56129,
+      "simulated_cells": 85262,
+      "iou": 0.654
+    },
+    {
+      "step": 205,
+      "wind_map": 14,
+      "observed_cells": 56599,
+      "simulated_cells": 86326,
+      "iou": 0.651
+    },
+    {
+      "step": 206,
+      "wind_map": 14,
+      "observed_cells": 57065,
+      "simulated_cells": 87407,
+      "iou": 0.648
+    },
+    {
+      "step": 207,
+      "wind_map": 14,
+      "observed_cells": 57545,
+      "simulated_cells": 88489,
+      "iou": 0.646
+    },
+    {
+      "step": 208,
+      "wind_map": 14,
+      "observed_cells": 58022,
+      "simulated_cells": 89523,
+      "iou": 0.644
+    },
+    {
+      "step": 209,
+      "wind_map": 14,
+      "observed_cells": 58496,
+      "simulated_cells": 90566,
+      "iou": 0.642
+    },
+    {
+      "step": 210,
+      "wind_map": 14,
+      "observed_cells": 59003,
+      "simulated_cells": 91634,
+      "iou": 0.64
+    },
+    {
+      "step": 211,
+      "wind_map": 15,
+      "observed_cells": 59551,
+      "simulated_cells": 92713,
+      "iou": 0.638
+    },
+    {
+      "step": 212,
+      "wind_map": 15,
+      "observed_cells": 60111,
+      "simulated_cells": 93775,
+      "iou": 0.637
+    },
+    {
+      "step": 213,
+      "wind_map": 15,
+      "observed_cells": 60681,
+      "simulated_cells": 94845,
+      "iou": 0.636
+    },
+    {
+      "step": 214,
+      "wind_map": 15,
+      "observed_cells": 61259,
+      "simulated_cells": 95921,
+      "iou": 0.635
+    },
+    {
+      "step": 215,
+      "wind_map": 15,
+      "observed_cells": 61846,
+      "simulated_cells": 96984,
+      "iou": 0.634
+    },
+    {
+      "step": 216,
+      "wind_map": 15,
+      "observed_cells": 62457,
+      "simulated_cells": 98036,
+      "iou": 0.633
+    },
+    {
+      "step": 217,
+      "wind_map": 15,
+      "observed_cells": 63048,
+      "simulated_cells": 99104,
+      "iou": 0.632
+    },
+    {
+      "step": 218,
+      "wind_map": 15,
+      "observed_cells": 63646,
+      "simulated_cells": 100205,
+      "iou": 0.631
+    },
+    {
+      "step": 219,
+      "wind_map": 15,
+      "observed_cells": 64274,
+      "simulated_cells": 101303,
+      "iou": 0.631
+    },
+    {
+      "step": 220,
+      "wind_map": 15,
+      "observed_cells": 64892,
+      "simulated_cells": 102386,
+      "iou": 0.63
+    },
+    {
+      "step": 221,
+      "wind_map": 15,
+      "observed_cells": 65490,
+      "simulated_cells": 103521,
+      "iou": 0.629
+    },
+    {
+      "step": 222,
+      "wind_map": 15,
+      "observed_cells": 66105,
+      "simulated_cells": 104677,
+      "iou": 0.628
+    },
+    {
+      "step": 223,
+      "wind_map": 15,
+      "observed_cells": 66734,
+      "simulated_cells": 105823,
+      "iou": 0.627
+    },
+    {
+      "step": 224,
+      "wind_map": 15,
+      "observed_cells": 67327,
+      "simulated_cells": 106957,
+      "iou": 0.626
+    },
+    {
+      "step": 225,
+      "wind_map": 15,
+      "observed_cells": 67920,
+      "simulated_cells": 108143,
+      "iou": 0.624
+    },
+    {
+      "step": 226,
+      "wind_map": 16,
+      "observed_cells": 68519,
+      "simulated_cells": 109311,
+      "iou": 0.623
+    },
+    {
+      "step": 227,
+      "wind_map": 16,
+      "observed_cells": 69135,
+      "simulated_cells": 110466,
+      "iou": 0.622
+    },
+    {
+      "step": 228,
+      "wind_map": 16,
+      "observed_cells": 69762,
+      "simulated_cells": 111580,
+      "iou": 0.622
+    },
+    {
+      "step": 229,
+      "wind_map": 16,
+      "observed_cells": 70396,
+      "simulated_cells": 112714,
+      "iou": 0.621
+    },
+    {
+      "step": 230,
+      "wind_map": 16,
+      "observed_cells": 71008,
+      "simulated_cells": 113852,
+      "iou": 0.62
+    },
+    {
+      "step": 231,
+      "wind_map": 16,
+      "observed_cells": 71660,
+      "simulated_cells": 114985,
+      "iou": 0.62
+    },
+    {
+      "step": 232,
+      "wind_map": 16,
+      "observed_cells": 72307,
+      "simulated_cells": 116093,
+      "iou": 0.619
+    },
+    {
+      "step": 233,
+      "wind_map": 16,
+      "observed_cells": 72961,
+      "simulated_cells": 117242,
+      "iou": 0.619
+    },
+    {
+      "step": 234,
+      "wind_map": 16,
+      "observed_cells": 73674,
+      "simulated_cells": 118365,
+      "iou": 0.619
+    },
+    {
+      "step": 235,
+      "wind_map": 16,
+      "observed_cells": 74393,
+      "simulated_cells": 119494,
+      "iou": 0.619
+    },
+    {
+      "step": 236,
+      "wind_map": 16,
+      "observed_cells": 75143,
+      "simulated_cells": 120625,
+      "iou": 0.619
+    },
+    {
+      "step": 237,
+      "wind_map": 16,
+      "observed_cells": 75910,
+      "simulated_cells": 121708,
+      "iou": 0.62
+    },
+    {
+      "step": 238,
+      "wind_map": 16,
+      "observed_cells": 76640,
+      "simulated_cells": 122776,
+      "iou": 0.621
+    },
+    {
+      "step": 239,
+      "wind_map": 16,
+      "observed_cells": 77400,
+      "simulated_cells": 123855,
+      "iou": 0.621
+    },
+    {
+      "step": 240,
+      "wind_map": 16,
+      "observed_cells": 78147,
+      "simulated_cells": 124925,
+      "iou": 0.622
+    },
+    {
+      "step": 241,
+      "wind_map": 17,
+      "observed_cells": 78899,
+      "simulated_cells": 126000,
+      "iou": 0.623
+    },
+    {
+      "step": 242,
+      "wind_map": 17,
+      "observed_cells": 79628,
+      "simulated_cells": 127121,
+      "iou": 0.623
+    },
+    {
+      "step": 243,
+      "wind_map": 17,
+      "observed_cells": 80374,
+      "simulated_cells": 128235,
+      "iou": 0.623
+    },
+    {
+      "step": 244,
+      "wind_map": 17,
+      "observed_cells": 81114,
+      "simulated_cells": 129381,
+      "iou": 0.624
+    },
+    {
+      "step": 245,
+      "wind_map": 17,
+      "observed_cells": 81848,
+      "simulated_cells": 130543,
+      "iou": 0.624
+    },
+    {
+      "step": 246,
+      "wind_map": 17,
+      "observed_cells": 82569,
+      "simulated_cells": 131741,
+      "iou": 0.623
+    },
+    {
+      "step": 247,
+      "wind_map": 17,
+      "observed_cells": 83280,
+      "simulated_cells": 132971,
+      "iou": 0.623
+    },
+    {
+      "step": 248,
+      "wind_map": 17,
+      "observed_cells": 84025,
+      "simulated_cells": 134249,
+      "iou": 0.623
+    },
+    {
+      "step": 249,
+      "wind_map": 17,
+      "observed_cells": 84802,
+      "simulated_cells": 135451,
+      "iou": 0.623
+    },
+    {
+      "step": 250,
+      "wind_map": 17,
+      "observed_cells": 85581,
+      "simulated_cells": 136630,
+      "iou": 0.623
+    },
+    {
+      "step": 251,
+      "wind_map": 17,
+      "observed_cells": 86428,
+      "simulated_cells": 137813,
+      "iou": 0.624
+    },
+    {
+      "step": 252,
+      "wind_map": 17,
+      "observed_cells": 87291,
+      "simulated_cells": 138981,
+      "iou": 0.625
+    },
+    {
+      "step": 253,
+      "wind_map": 17,
+      "observed_cells": 88172,
+      "simulated_cells": 140150,
+      "iou": 0.626
+    },
+    {
+      "step": 254,
+      "wind_map": 17,
+      "observed_cells": 89087,
+      "simulated_cells": 141345,
+      "iou": 0.627
+    },
+    {
+      "step": 255,
+      "wind_map": 17,
+      "observed_cells": 90010,
+      "simulated_cells": 142561,
+      "iou": 0.628
+    },
+    {
+      "step": 256,
+      "wind_map": 18,
+      "observed_cells": 90963,
+      "simulated_cells": 143717,
+      "iou": 0.63
+    },
+    {
+      "step": 257,
+      "wind_map": 18,
+      "observed_cells": 91924,
+      "simulated_cells": 144870,
+      "iou": 0.631
+    },
+    {
+      "step": 258,
+      "wind_map": 18,
+      "observed_cells": 92894,
+      "simulated_cells": 145975,
+      "iou": 0.633
+    },
+    {
+      "step": 259,
+      "wind_map": 18,
+      "observed_cells": 93897,
+      "simulated_cells": 147103,
+      "iou": 0.635
+    },
+    {
+      "step": 260,
+      "wind_map": 18,
+      "observed_cells": 94885,
+      "simulated_cells": 148255,
+      "iou": 0.637
+    },
+    {
+      "step": 261,
+      "wind_map": 18,
+      "observed_cells": 95889,
+      "simulated_cells": 149385,
+      "iou": 0.638
+    },
+    {
+      "step": 262,
+      "wind_map": 18,
+      "observed_cells": 96853,
+      "simulated_cells": 150553,
+      "iou": 0.64
+    },
+    {
+      "step": 263,
+      "wind_map": 18,
+      "observed_cells": 97803,
+      "simulated_cells": 151771,
+      "iou": 0.641
+    },
+    {
+      "step": 264,
+      "wind_map": 18,
+      "observed_cells": 98770,
+      "simulated_cells": 152993,
+      "iou": 0.642
+    },
+    {
+      "step": 265,
+      "wind_map": 18,
+      "observed_cells": 99701,
+      "simulated_cells": 154205,
+      "iou": 0.643
+    },
+    {
+      "step": 266,
+      "wind_map": 18,
+      "observed_cells": 100628,
+      "simulated_cells": 155436,
+      "iou": 0.644
+    },
+    {
+      "step": 267,
+      "wind_map": 18,
+      "observed_cells": 101558,
+      "simulated_cells": 156636,
+      "iou": 0.645
+    },
+    {
+      "step": 268,
+      "wind_map": 18,
+      "observed_cells": 102476,
+      "simulated_cells": 157837,
+      "iou": 0.646
+    },
+    {
+      "step": 269,
+      "wind_map": 18,
+      "observed_cells": 103400,
+      "simulated_cells": 159074,
+      "iou": 0.647
+    },
+    {
+      "step": 270,
+      "wind_map": 18,
+      "observed_cells": 104323,
+      "simulated_cells": 160258,
+      "iou": 0.647
+    },
+    {
+      "step": 271,
+      "wind_map": 19,
+      "observed_cells": 105263,
+      "simulated_cells": 161457,
+      "iou": 0.648
+    },
+    {
+      "step": 272,
+      "wind_map": 19,
+      "observed_cells": 106226,
+      "simulated_cells": 162622,
+      "iou": 0.65
+    },
+    {
+      "step": 273,
+      "wind_map": 19,
+      "observed_cells": 107198,
+      "simulated_cells": 163788,
+      "iou": 0.651
+    },
+    {
+      "step": 274,
+      "wind_map": 19,
+      "observed_cells": 108177,
+      "simulated_cells": 164930,
+      "iou": 0.652
+    },
+    {
+      "step": 275,
+      "wind_map": 19,
+      "observed_cells": 109140,
+      "simulated_cells": 166072,
+      "iou": 0.654
+    },
+    {
+      "step": 276,
+      "wind_map": 19,
+      "observed_cells": 110109,
+      "simulated_cells": 167205,
+      "iou": 0.655
+    },
+    {
+      "step": 277,
+      "wind_map": 19,
+      "observed_cells": 111095,
+      "simulated_cells": 168339,
+      "iou": 0.656
+    },
+    {
+      "step": 278,
+      "wind_map": 19,
+      "observed_cells": 112051,
+      "simulated_cells": 169508,
+      "iou": 0.657
+    },
+    {
+      "step": 279,
+      "wind_map": 19,
+      "observed_cells": 113000,
+      "simulated_cells": 170650,
+      "iou": 0.658
+    },
+    {
+      "step": 280,
+      "wind_map": 19,
+      "observed_cells": 113951,
+      "simulated_cells": 171756,
+      "iou": 0.66
+    },
+    {
+      "step": 281,
+      "wind_map": 19,
+      "observed_cells": 114904,
+      "simulated_cells": 172920,
+      "iou": 0.661
+    },
+    {
+      "step": 282,
+      "wind_map": 19,
+      "observed_cells": 115880,
+      "simulated_cells": 174095,
+      "iou": 0.662
+    },
+    {
+      "step": 283,
+      "wind_map": 19,
+      "observed_cells": 116893,
+      "simulated_cells": 175264,
+      "iou": 0.663
+    },
+    {
+      "step": 284,
+      "wind_map": 19,
+      "observed_cells": 117901,
+      "simulated_cells": 176474,
+      "iou": 0.664
+    },
+    {
+      "step": 285,
+      "wind_map": 19,
+      "observed_cells": 118911,
+      "simulated_cells": 177711,
+      "iou": 0.665
+    },
+    {
+      "step": 286,
+      "wind_map": 20,
+      "observed_cells": 119938,
+      "simulated_cells": 178939,
+      "iou": 0.667
+    },
+    {
+      "step": 287,
+      "wind_map": 20,
+      "observed_cells": 120943,
+      "simulated_cells": 180122,
+      "iou": 0.668
+    },
+    {
+      "step": 288,
+      "wind_map": 20,
+      "observed_cells": 121953,
+      "simulated_cells": 181245,
+      "iou": 0.669
+    },
+    {
+      "step": 289,
+      "wind_map": 20,
+      "observed_cells": 122995,
+      "simulated_cells": 182363,
+      "iou": 0.671
+    },
+    {
+      "step": 290,
+      "wind_map": 20,
+      "observed_cells": 124056,
+      "simulated_cells": 183475,
+      "iou": 0.672
+    },
+    {
+      "step": 291,
+      "wind_map": 20,
+      "observed_cells": 125070,
+      "simulated_cells": 184578,
+      "iou": 0.674
+    },
+    {
+      "step": 292,
+      "wind_map": 20,
+      "observed_cells": 126072,
+      "simulated_cells": 185722,
+      "iou": 0.675
+    },
+    {
+      "step": 293,
+      "wind_map": 20,
+      "observed_cells": 127055,
+      "simulated_cells": 186837,
+      "iou": 0.676
+    },
+    {
+      "step": 294,
+      "wind_map": 20,
+      "observed_cells": 128044,
+      "simulated_cells": 187931,
+      "iou": 0.677
+    },
+    {
+      "step": 295,
+      "wind_map": 20,
+      "observed_cells": 129020,
+      "simulated_cells": 189040,
+      "iou": 0.678
+    },
+    {
+      "step": 296,
+      "wind_map": 20,
+      "observed_cells": 129970,
+      "simulated_cells": 190167,
+      "iou": 0.679
+    },
+    {
+      "step": 297,
+      "wind_map": 20,
       "observed_cells": 130947,
-      "simulated_cells": 186058,
-      "iou": 0.7
+      "simulated_cells": 191339,
+      "iou": 0.68
     },
     {
-      "day": 298,
-      "steps": 1,
+      "step": 298,
+      "wind_map": 20,
       "observed_cells": 131892,
-      "simulated_cells": 187274,
-      "iou": 0.7
+      "simulated_cells": 192474,
+      "iou": 0.681
     },
     {
-      "day": 299,
-      "steps": 1,
+      "step": 299,
+      "wind_map": 20,
       "observed_cells": 132768,
-      "simulated_cells": 188513,
-      "iou": 0.7
+      "simulated_cells": 193680,
+      "iou": 0.681
     },
     {
-      "day": 300,
-      "steps": 1,
+      "step": 300,
+      "wind_map": 20,
       "observed_cells": 133668,
-      "simulated_cells": 189758,
-      "iou": 0.7
+      "simulated_cells": 194915,
+      "iou": 0.682
     }
   ]
 }
